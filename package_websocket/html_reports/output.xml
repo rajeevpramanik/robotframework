@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220814 22:38:56.089" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Suite" source="C:\Users\veera\Documents\GitHub\github_all_in_one_repo\package_websocket\test_suite">
+<suite id="s1-s1" name="Test5 Echo Socketio Random" source="C:\Users\veera\Documents\GitHub\github_all_in_one_repo\package_websocket\test_suite\test5_echo_socketio_random.robot">
+<kw name="KW: Environment Specific" library="setup_teardown_func" type="SETUP">
+<arg>${environment}</arg>
+<doc>Condition where all host are stored in one place based on the env it will get executed.</doc>
+<try>
+<branch type="TRY">
+<if>
+<branch type="IF" condition="&quot;${environment}&quot; == &quot;uat&quot;">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>KW: UAT host url's</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="KW: UAT host url's" library="setup_teardown_func">
+<doc>UAT environment host urls.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ws host url}</var>
+<arg>wss://ws.postman-echo.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220814 22:38:57.096" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
+<status status="PASS" starttime="20220814 22:38:57.096" endtime="20220814 22:38:57.096"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${api host url}</var>
+<arg>https://postman-echo.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220814 22:38:57.096" level="INFO">${api host url} = https://postman-echo.com</msg>
+<status status="PASS" starttime="20220814 22:38:57.096" endtime="20220814 22:38:57.096"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ws host url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220814 22:38:57.097" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
+<status status="PASS" starttime="20220814 22:38:57.097" endtime="20220814 22:38:57.097"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${api host url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220814 22:38:57.097" level="INFO">${api host url} = https://postman-echo.com</msg>
+<status status="PASS" starttime="20220814 22:38:57.097" endtime="20220814 22:38:57.097"/>
+</kw>
+<status status="PASS" starttime="20220814 22:38:57.096" endtime="20220814 22:38:57.098"/>
+</kw>
+<status status="PASS" starttime="20220814 22:38:57.095" endtime="20220814 22:38:57.098"/>
+</kw>
+<status status="PASS" starttime="20220814 22:38:57.095" endtime="20220814 22:38:57.098"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${environment}&quot; == &quot;staging&quot;">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>KW: STAGING host url's</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:57.098" endtime="20220814 22:38:57.098"/>
+</kw>
+<status status="NOT RUN" starttime="20220814 22:38:57.098" endtime="20220814 22:38:57.098"/>
+</branch>
+<status status="PASS" starttime="20220814 22:38:57.095" endtime="20220814 22:38:57.098"/>
+</if>
+<status status="PASS" starttime="20220814 22:38:57.095" endtime="20220814 22:38:57.098"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log" library="BuiltIn">
+<arg>Exception! the current environment "${environment}" is not functionable.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:57.098" endtime="20220814 22:38:57.098"/>
+</kw>
+<status status="NOT RUN" starttime="20220814 22:38:57.098" endtime="20220814 22:38:57.098"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Log" library="BuiltIn">
+<arg>Finally! the current environment "${environment}" is functionable.</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220814 22:38:57.099" level="INFO">Finally! the current environment "uat" is functionable.</msg>
+<status status="PASS" starttime="20220814 22:38:57.099" endtime="20220814 22:38:57.099"/>
+</kw>
+<status status="PASS" starttime="20220814 22:38:57.099" endtime="20220814 22:38:57.099"/>
+</branch>
+<status status="PASS" starttime="20220814 22:38:57.095" endtime="20220814 22:38:57.099"/>
+</try>
+<status status="PASS" starttime="20220814 22:38:57.094" endtime="20220814 22:38:57.099"/>
+</kw>
+<test id="s1-s1-t1" name="TC1: WS Connect with events to randomize from 0-1, v4, handshake path to random assert the reply and close the socket." line="8">
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>KW: WebSocketClient Connect</arg>
+<arg>${ws host url}</arg>
+<arg>socketio</arg>
+<arg>${None}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="KW: WebSocketClient Connect" library="ckv_functions">
+<arg>${ws host url}</arg>
+<arg>socketio</arg>
+<arg>${None}</arg>
+<doc>Create a WebSocket session to a server.
+With an alias, where Robot Framework alias is to identify the session.
+Ex: wss://ws.postman-echo.com/raw header=["User-Agent: MyProgram","x-custom: header"]</doc>
+<kw name="Connect" library="WebSocketClient">
+<var>${websocket session_name}</var>
+<arg>${ws_host_url_arg}/${ws_paths_arg}</arg>
+<arg>header=${headers}</arg>
+<msg timestamp="20220814 22:38:59.254" level="FAIL">WebSocketBadStatusException: Handshake status 502 Bad Gateway</msg>
+<status status="FAIL" starttime="20220814 22:38:57.101" endtime="20220814 22:38:59.257"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${websocket session_name}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:59.258" endtime="20220814 22:38:59.258"/>
+</kw>
+<status status="FAIL" starttime="20220814 22:38:57.101" endtime="20220814 22:38:59.259"/>
+</kw>
+<status status="FAIL" starttime="20220814 22:38:57.100" endtime="20220814 22:38:59.259"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>KW: WebSocketClient Recv</arg>
+<arg>${websocket session_name}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="KW: WebSocketClient Recv" library="ckv_functions">
+<arg>${websocket session_name}</arg>
+<doc>Receive the message from the Websocket server.</doc>
+<kw name="Recv" library="WebSocketClient">
+<var>${websocket receive results}</var>
+<arg>${websocket session_name_arg}</arg>
+<msg timestamp="20220814 22:38:59.262" level="FAIL">AttributeError: 'str' object has no attribute 'recv'</msg>
+<status status="FAIL" starttime="20220814 22:38:59.261" endtime="20220814 22:38:59.262"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${websocket receive results}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:59.262" endtime="20220814 22:38:59.262"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${receive results converted to string}</var>
+<arg>${websocket receive results}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:59.263" endtime="20220814 22:38:59.263"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${receive results converted to string}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220814 22:38:59.263" endtime="20220814 22:38:59.263"/>
+</kw>
+<status status="FAIL" starttime="20220814 22:38:59.261" endtime="20220814 22:38:59.263"/>
+</kw>
+<status status="FAIL" starttime="20220814 22:38:59.260" endtime="20220814 22:38:59.264"/>
+</kw>
+<doc>This TC is to Connect, send with valid json, assert the reply and close the socket.</doc>
+<tag>positive</tag>
+<tag>sanity</tag>
+<status status="FAIL" starttime="20220814 22:38:57.099" endtime="20220814 22:38:59.264">Several failures occurred:
+
+1) WebSocketBadStatusException: Handshake status 502 Bad Gateway
+
+2) AttributeError: 'str' object has no attribute 'recv'</status>
+</test>
+<doc>This robot file will execute only the raw cases with json.</doc>
+<status status="FAIL" starttime="20220814 22:38:56.112" endtime="20220814 22:38:59.266"/>
+</suite>
+<status status="FAIL" starttime="20220814 22:38:56.090" endtime="20220814 22:38:59.269"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">positive</stat>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Suite">Test Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test5 Echo Socketio Random">Test Suite.Test5 Echo Socketio Random</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

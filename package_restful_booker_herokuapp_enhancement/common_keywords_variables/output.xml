@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220709 10:16:21.825" rpa="false" schemaversion="3">
+<suite id="s1" name="Ckv Functions" source="C:\Users\veera\Documents\GitHub\github_all_in_one_repo\package_restful_booker_herokuapp_enhancement\common_keywords_variables\ckv_functions.robot">
+<test id="s1-t1" name="ABCD" line="30">
+<kw name="KW: Create session">
+<arg>${session_restful_brooker}</arg>
+<arg>${api_base_url}</arg>
+<doc>Create a HTTP session to a server.
+With an alias, where Robot Framework alias is to identify the session.
+Including the Base url of the server
+Verify HTTPS request is being made in Robot Framework.</doc>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>${session_name}</arg>
+<arg>${arg_api_base_url}</arg>
+<arg>verify=True</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220709 10:16:22.715" level="INFO">Creating Session using : alias=restful_brooker, url=https://restful-booker.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220709 10:16:22.715" endtime="20220709 10:16:22.715"/>
+</kw>
+<status status="PASS" starttime="20220709 10:16:22.714" endtime="20220709 10:16:22.715"/>
+</kw>
+<kw name="KW: Request Header.">
+<doc>APIs require to send particular headers along with requests, typically to provide additional metadata about the operation that are performing.
+Can set these up in the Headers.
+Enter any key-value pairs needed and it will be send along with the request.</doc>
+<kw name="KW for User Agent" library="user_agents">
+<kw name="Get Length" library="BuiltIn">
+<var>${Length_Of_user_agents_Lists_Items}</var>
+<arg>${user_agents list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20220709 10:16:22.716" level="INFO">Length is 56</msg>
+<msg timestamp="20220709 10:16:22.716" level="INFO">${Length_Of_user_agents_Lists_Items} = 56</msg>
+<status status="PASS" starttime="20220709 10:16:22.716" endtime="20220709 10:16:22.716"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_NUMBER}</var>
+<arg>random.randint(0,${Length_Of_user_agents_Lists_Items}-1)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220709 10:16:22.717" level="INFO">${random_NUMBER} = 34</msg>
+<status status="PASS" starttime="20220709 10:16:22.716" endtime="20220709 10:16:22.717"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${useragent}</var>
+<arg>${user_agents list}</arg>
+<arg>${random_NUMBER}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20220709 10:16:22.717" level="INFO">${useragent} = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362</msg>
+<status status="PASS" starttime="20220709 10:16:22.717" endtime="20220709 10:16:22.717"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${useragent}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220709 10:16:22.718" level="INFO">${useragent} = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362</msg>
+<status status="PASS" starttime="20220709 10:16:22.717" endtime="20220709 10:16:22.718"/>
+</kw>
+<status status="PASS" starttime="20220709 10:16:22.716" endtime="20220709 10:16:22.718"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${Header}</var>
+<arg>User-Agent=${useragent}</arg>
+<arg>Content-Type=application/json</arg>
+<arg>accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220709 10:16:22.718" level="INFO">${Header} = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362', 'Content-Type': 'application/json', 'accept': 'appli...</msg>
+<status status="PASS" starttime="20220709 10:16:22.718" endtime="20220709 10:16:22.718"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${Header}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220709 10:16:22.719" level="INFO">${Header} = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362', 'Content-Type': 'application/json', 'accept': 'appli...</msg>
+<status status="PASS" starttime="20220709 10:16:22.718" endtime="20220709 10:16:22.719"/>
+</kw>
+<status status="PASS" starttime="20220709 10:16:22.715" endtime="20220709 10:16:22.719"/>
+</kw>
+<status status="PASS" starttime="20220709 10:16:22.711" endtime="20220709 10:16:22.719"/>
+</test>
+<doc>This is a common variable robot file. Where every individual variable will be written and used multiple times.</doc>
+<status status="PASS" starttime="20220709 10:16:21.825" endtime="20220709 10:16:22.720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ckv Functions">Ckv Functions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
