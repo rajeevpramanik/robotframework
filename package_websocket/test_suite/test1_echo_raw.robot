@@ -22,7 +22,7 @@ TC1: WS Connect, set timeout, get timeout, assert timeout and close the socket.
 TC2: WS Connect, get header, status & assert status, header and close the socket with reason.
     [Documentation]     This TC is to Connect, get header, status & assert status, header and close the socket with reason.
     [Tags]              positive    smoke
-#    Skip                Skipping for debug
+    # Skip                Skipping for debug
 #    Pass Execution      Passed the tc's.
 #    Fail                Failed tc's & deprecated smoke test.
     run keyword and continue on failure                KW: WebSocketClient Connect                    ${ws host url}                        ${ws path}    ${None}

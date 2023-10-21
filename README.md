@@ -63,9 +63,11 @@ cd C:\Users\veera\Documents\package_restful_booker_herokuapp
 robot -d html_reports    pom_test_suite\*.robot
 
 ==============================================================
+# Single command in python to install relevant modules from a package.json like file
+pip3 install -r requirements.txt
+==============================================================
 
 # Links
-
 ==============================================================
 
 1. Visit: https://libraries.io

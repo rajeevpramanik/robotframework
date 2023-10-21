@@ -422,11 +422,11 @@ KW: Assert the rooms header Fields sheet with all the room data's.
     ${read_Priority (Req.) details}=      Read From Cell      P5
     Should Be Equal     ${read_Priority (Req.) details}        Enter a number less than 999        formatter=str        strip_spaces=True       collapse_spaces=True
 
-    ${read_Hubilo Unique ID}=      Read From Cell      Q4
-    Should Be Equal     ${read_Hubilo Unique ID}        Hubilo Unique ID        formatter=str
+    ${read_palipoint Unique ID}=      Read From Cell      Q4
+    Should Be Equal     ${read_palipoint Unique ID}        palipoint Unique ID        formatter=str
 
-    ${read_Hubilo Unique ID details}=      Read From Cell      Q5
-    Should Be Equal     ${read_Hubilo Unique ID details}        This is a read only column. Do not delete this column        formatter=str        strip_spaces=True       collapse_spaces=True
+    ${read_palipoint Unique ID details}=      Read From Cell      Q5
+    Should Be Equal     ${read_palipoint Unique ID details}        This is a read only column. Do not delete this column        formatter=str        strip_spaces=True       collapse_spaces=True
 
     ${read_Remarks}=      Read From Cell      Q4
     Should Be Equal     ${read_Remarks}        Remarks        formatter=str

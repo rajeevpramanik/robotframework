@@ -1,5 +1,5 @@
 # cd
-# cd /Users/rajeev/Documents/hubilo_projects/hubilo_automation/package_dashboard_community
+# cd /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community
 # robot -d    html_reports     --skip visual --skip negative  pom_tc_suites
 # robot -d    html_reports     --skip visual --skip negative  --suite pom_tc_suites.02_tc_login       pom_tc_suites
 # robot -d    html_reports     --skip visual --skip negative  --suite pom_tc_suites.01_tc_signup   --suite pom_tc_suites.03_tc_onboarding    --suite pom_tc_suites.04_tc_integration_sso        pom_tc_suites
