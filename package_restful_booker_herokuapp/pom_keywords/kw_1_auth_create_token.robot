@@ -9,6 +9,7 @@ ${API AUTH END POINT}      /auth
 ${useragent}    value
 ${Body}    value
 ${Header}    value
+${Next_Row_Evalute}    value
 
 
 *** Keywords ***

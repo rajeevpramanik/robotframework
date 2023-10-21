@@ -12,6 +12,12 @@ ${Body}    value
 ${Header}    value
 ${Body2nd}    value
 ${Header2}    value
+${Fake_First_Name}    value
+${Fake_Last_Name}    value
+${Faker_Price_Value}    value
+${CurrentDate}    value
+${FutureDate}    value
+${Faker_words}    value
 
 
 *** Keywords ***
