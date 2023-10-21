@@ -10,6 +10,11 @@ Resource        ../main_setup_teardown/user_agents.robot
 ***Variables***
 ${JWToken}      token=
 ${API BOOKING ID END POINT}      /booking
+${Cell Value}    value
+${Header}    value
+${useragent}    value
+${Reading C column data}    value
+${DELETEResponse}    value
 
 ***Keywords***
 KW: Response of the DELETE Request.

@@ -4,6 +4,14 @@ Resource        ../pom_keywords/kw_2_createbooking.robot
 Resource        ../pom_keywords/kw_5_updating_booking.robot
 
 
+*** Variables ***
+${Response}    value
+${Next_Row_Evalute}    value
+${Cell Value}    value
+
+
+
+
 *** Test Cases ***
 TC-1 [PUT] Updates a current booking - SUCCESSFUL
     [Documentation]     This TC is to create booking with user details.

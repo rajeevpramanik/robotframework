@@ -25,3 +25,4 @@ robotframework-archivelibrary
 robotframework-confluentkafkalibrary
 robotframework-databaselibrary
 robot-mongodb-library
+robotframework-redislibrary

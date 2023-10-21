@@ -4,6 +4,13 @@ Resource        ../main_setup_teardown/setup_teardown_func.robot
 Resource        ../pom_keywords/kw_1_auth_create_token.robot
 
 
+*** Variables ***
+${Response}    value
+${Next_Row_Evalute}    value
+
+
+
+
 *** Test Cases ***
 TC-1 [POST] CREATE AUTH OR TOKEN FOR THE BOOK - SUCCESSFUL(Valid)
     [Documentation]     This TC is to create AUTH or TOKEN with user credentials.

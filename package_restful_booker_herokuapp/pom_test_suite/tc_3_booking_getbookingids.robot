@@ -6,6 +6,8 @@ Resource        ../main_setup_teardown/user_agents.robot
 
 *** Variables ***
 ${API BOOKING END POINT}      /booking
+${Header}    value
+${GETResponse}    value
 
 *** Keywords ***
 KW: Response of the GET Request.

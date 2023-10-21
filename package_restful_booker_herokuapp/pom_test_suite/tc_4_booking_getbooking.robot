@@ -6,6 +6,17 @@ Resource        ../main_setup_teardown/user_agents.robot
 
 *** Variables ***
 ${API BOOKING ID END POINT}      /booking
+${Cell Value2}    value
+${Header}    value
+${Cell Value}    value
+${GETResponse of perticular id}    value
+${Reading B column data}    value
+${Reading C column data}    value
+${Reading D column data}    value
+${Reading E column data}    value
+${Reading H column data}    value
+${The all row count is}    value
+${GETResponse of all id}    value
 
 *** Keywords ***
 KW: Response of the GET Request for single id.

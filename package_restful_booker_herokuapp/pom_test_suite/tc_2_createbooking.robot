@@ -3,6 +3,13 @@ Documentation    Suite for Create Booking.
 Resource        ../pom_keywords/kw_2_createbooking.robot
 
 
+*** Variables ***
+${Response}    value
+${Next_Row_Evalute}    value
+
+
+
+
 *** Test Cases ***
 TC-1 [POST] CREATE BOOKING FOR THE BOOK - SUCCESSFUL
     [Documentation]     This TC is to create booking with user details.

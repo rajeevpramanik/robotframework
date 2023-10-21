@@ -7,6 +7,9 @@ Resource        ../pom_keywords/kw_6_partialupdatebooking.robot
 
 ***Variables***
 ${JWToken}      token=
+${Response}    value
+${Next_Row_Evalute}    value
+${Cell Value}    value
 
 
 ***Test Cases***
