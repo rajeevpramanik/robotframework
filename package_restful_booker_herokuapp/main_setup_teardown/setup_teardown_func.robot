@@ -13,6 +13,15 @@ Resource        ../main_setup_teardown/user_agents.robot
 *** Variables ***
 ${The work book}        ../package_restful_booker_herokuapp/test_excel_ddt/testfile.xlsx
 ${API BASE URL}         https://restful-booker.herokuapp.com
+${The all row count is}    value
+${Next_Row_Evalute}    value
+${Fake_First_Name}    value
+${Fake_Last_Name}    value
+${Faker_Price_Value}    value
+${Faker_words}    value
+${CurrentDate}    value
+${FutureDate}    value
+${Count}    value
 
 
 *** Keywords ***

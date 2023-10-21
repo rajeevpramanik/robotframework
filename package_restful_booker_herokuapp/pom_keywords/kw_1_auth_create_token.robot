@@ -6,6 +6,9 @@ Resource        ../main_setup_teardown/user_agents.robot
 
 *** Variables ***
 ${API AUTH END POINT}      /auth
+${useragent}    value
+${Body}    value
+${Header}    value
 
 
 *** Keywords ***

@@ -6,6 +6,12 @@ Resource        ../main_setup_teardown/user_agents.robot
 
 *** Variables ***
 ${API CreateBooking END POINT}      /booking
+${useragent}    value
+${The Boolean value is}    value
+${Body}    value
+${Header}    value
+${Body2nd}    value
+${Header2}    value
 
 
 *** Keywords ***

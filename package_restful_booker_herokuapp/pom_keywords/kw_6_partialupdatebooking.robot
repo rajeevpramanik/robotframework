@@ -7,6 +7,8 @@ Resource        ../pom_keywords/kw_2_createbooking.robot
 
 ***Variables***
 ${JWToken}      token=
+${Reading C column data}    value
+${Cell Value}    value
 
 
 ***Keywords***
