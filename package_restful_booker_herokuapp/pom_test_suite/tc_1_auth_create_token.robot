@@ -20,10 +20,10 @@ TC-1 [POST] CREATE AUTH OR TOKEN FOR THE BOOK - SUCCESSFUL(Valid)
 #    Fail                Failing the text case   Deprecated  Smoke Test
 
     # Called the Keywords to the Test Cases, where it will open, count the row & column and evalute to the next row.
-    Given KW: To open the workbook to the specified path.
+    Given KW: To open the workbook to the specified path.        ${The work book}
     Given KW: Interacting with the Excel sheet2.
 
-    When KW: Creating Auth or Token POST Session.
+    When KW: Creating Auth or Token POST Session.    ${API BASE URL}    True
     Then KW: Request Header.
     And KW: POST Body with JSON Keys & Value.
     run keyword and continue on failure        KW: Response of the POST Request.
@@ -73,7 +73,7 @@ TC-2 [POST] CREATE AUTH OR TOKEN FOR THE BOOK - UNSUCCESSFUL(Invalid)
 #    Pass Execution      Passing the test case   deprecated	-regression
 #    Fail                Failing the text case   Deprecated  Smoke Test
 
-    run keyword and continue on failure     KW: Creating Auth or Token POST Session.
+    run keyword and continue on failure     KW: Creating Auth or Token POST Session.        ${API BASE URL}    True
     run keyword and continue on failure     KW: Request Header.
     run keyword and continue on failure     KW: POST Body with Invalid JSON Keys & Value.
     run keyword and continue on failure     KW: Response of the POST Request.

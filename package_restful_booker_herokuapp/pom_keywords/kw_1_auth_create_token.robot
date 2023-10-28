@@ -19,8 +19,9 @@ KW: Creating Auth or Token POST Session.
     ...     With an alias, where Robot Framework alias is to identify the session.
     ...     Including the Base url of the server
     ...     Verify HTTPS request is being made in Robot Framework.
+    [Arguments]        ${arg api base url}        ${arg verify}
 ####################################################################################
-    create session      Restful_Brooker      ${API BASE URL}      verify=True
+    create session      Restful_Brooker      ${arg api base url}    verify=${arg verify}
 ####################################################################################
 
 

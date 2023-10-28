@@ -27,7 +27,8 @@ ${Count}    value
 *** Keywords ***
 KW: To open the workbook to the specified path.
     [Documentation]     This Keyword is opening the excelsheets to write & read data's.
-    Open Workbook       ${The work book}
+    [Arguments]        ${arg the work book}
+    Open Workbook       ${arg the work book}
 
 KW: To save & close the workbook to the specified path.
     [Documentation]     This Keyword will help to save all the data's written to the sheet and will close it safely.
