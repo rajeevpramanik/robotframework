@@ -10,9 +10,9 @@ Library             DateTime
 Library             BrowserMobProxyLibrary
 Library             WebSocketClient
 Library             ListenerLibrary
-Resource            ../setup_teardown/user_agents.robot
-Resource            ../test_common_func/ckv_variables.robot
-Resource            ../test_common_func/ckv_functions.robot
+Resource            ../settings/user_agents.robot
+Resource            ../variables/ckv_variables.robot
+Resource            ../keywords/ckv_functions.robot
 
 
 *** Variables ***

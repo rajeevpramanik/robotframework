@@ -1,5 +1,5 @@
 ***Settings***
-Resource        ../setup_teardown/setup_teardown_func.robot
+Resource        ../settings/setup_teardown_func.robot
 
 ***Variables***
 @{user_agents list}=    Create List     
