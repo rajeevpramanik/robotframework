@@ -1,7 +1,13 @@
 *** Settings ***
 Documentation           This robot file will execute only the raw cases with json.
-Resource                ../setup_teardown/setup_teardown_func.robot
+Resource                ../settings/setup_teardown_func.robot
 Suite Setup             KW: Environment Specific    ${environment}
+
+
+*** Variables ***
+${websocket session_name}    value
+
+
 
 
 *** Test Cases ***

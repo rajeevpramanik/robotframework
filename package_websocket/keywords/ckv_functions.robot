@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   This is a common function robot file. Where every individual function keywords will be written and used multiple times. 
-Resource        ../setup_teardown/setup_teardown_func.robot
+Resource        ../settings/setup_teardown_func.robot
 
 
 *** Variables ***

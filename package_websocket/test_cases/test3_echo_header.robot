@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation           This robot file will execute only the raw cases with headers.
-Resource                ../setup_teardown/setup_teardown_func.robot
+Resource                ../settings/setup_teardown_func.robot
 Suite Setup             KW: Environment Specific    ${environment}
 
 

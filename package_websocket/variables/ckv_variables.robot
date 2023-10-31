@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   POM or Variables and Keywords for creating Auth or Token.
-Resource        ../setup_teardown/setup_teardown_func.robot
+Resource        ../settings/setup_teardown_func.robot
 
 
 *** Variables ***

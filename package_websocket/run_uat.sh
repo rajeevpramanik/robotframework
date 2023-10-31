@@ -1,1 +1,0 @@
-robot -d    html_reports        --skip negative  --variable environment:uat    test_suite
