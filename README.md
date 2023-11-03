@@ -63,11 +63,14 @@ cd C:\Users\veera\Documents\package_restful_booker_herokuapp
 robot -d html_reports    pom_test_suite\*.robot
 
 ==============================================================
+
 # Single command in python to install relevant modules from a package.json like file
+
 pip3 install -r requirements.txt
-==============================================================
+================================
 
 # Links
+
 ==============================================================
 
 1. Visit: https://libraries.io
@@ -77,6 +80,8 @@ pip3 install -r requirements.txt
 5. Visit: https://help.pace.qentinel.com/pacewords-reference/current/index_pacewords.html
 6. Visit: https://github.com/qentinelqi/qweb
 7. https://raw.githack.com/sebastianciupinski/robotframework-listenerlibrary/master/docs/ListenerLibrary.html
+8. https://docs.robotframework.org/docs/examples/project_structure
+9. https://robocorp.com/docs/setup/robot-yaml-format
 
 ==============================================================
 
@@ -100,7 +105,7 @@ pip3 install -r requirements.txt
 
 ==============================================================
 
-1. Qweb:                        	pip3 install QWeb (W); python3 -m pip install QWeb (Lin/Mac)
+1. Qweb:                        	pip3 install QWeb (W); python3 -m pip install QWeb(Lin/Mac)
 2. ExcellentLibrary:            	pip3 install robotframework-excellentlibrary
 3. Debug Library:               	pip3 install robotframework-debuglibrary
 4. Faker:			       	pip3 install robotframework-faker
@@ -119,7 +124,7 @@ pip3 install -r requirements.txt
 17. SSH Library:                	pip3 install robotframework-sshlibrary
 18. JSONLibrary:                	pip3 install robotframework-jsonlibrary
 19. ScreenCapture:              	pip3 install --upgrade robotframework-screencaplibrary
-20. Eyes:                       		pip3 install robotframework-eyes
+20. Eyes:                       	pip3 install robotframework-eyes
 21. ImageLibrary:               	pip3 install robotframework-imagelibrary
 22. WebSocketClient:            pip3 install robotframework-websocketclient
 23. Appium: 				pip3 install robotframework-appiumlibrary
