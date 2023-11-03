@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20231031 08:54:31.826" rpa="false" schemaversion="4">
-<suite id="s1" name="Test Cases" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_websocket_folder_update/test_cases">
-<suite id="s1-s1" name="Test1 Echo Raw" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_websocket_folder_update/test_cases/test1_echo_raw.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20231103 06:54:46.129" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Cases" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_websocket/test_cases">
+<suite id="s1-s1" name="Test1 Echo Raw" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_websocket/test_cases/test1_echo_raw.robot">
 <kw name="KW: Environment Specific" library="setup_teardown_func" type="SETUP">
 <arg>${environment}</arg>
 <doc>Condition where all host are stored in one place based on the env it will get executed.</doc>
@@ -18,66 +18,66 @@
 <var>${ws host url}</var>
 <arg>wss://ws.postman-echo.com</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231031 08:54:32.093" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<msg timestamp="20231103 06:54:47.202" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
+<status status="PASS" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${api host url}</var>
 <arg>https://postman-echo.com</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231031 08:54:32.093" level="INFO">${api host url} = https://postman-echo.com</msg>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<msg timestamp="20231103 06:54:47.202" level="INFO">${api host url} = https://postman-echo.com</msg>
+<status status="PASS" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ws host url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:32.093" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<msg timestamp="20231103 06:54:47.202" level="INFO">${ws host url} = wss://ws.postman-echo.com</msg>
+<status status="PASS" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${api host url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:32.093" level="INFO">${api host url} = https://postman-echo.com</msg>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<msg timestamp="20231103 06:54:47.202" level="INFO">${api host url} = https://postman-echo.com</msg>
+<status status="PASS" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<status status="PASS" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.202"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.092" endtime="20231031 08:54:32.093"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.202"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${environment}&quot; == &quot;staging&quot;">
 <kw name="Run Keyword" library="BuiltIn">
 <arg>KW: STAGING host url's</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="NOT RUN" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.093"/>
+<status status="NOT RUN" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </kw>
-<status status="NOT RUN" starttime="20231031 08:54:32.093" endtime="20231031 08:54:32.094"/>
+<status status="NOT RUN" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.202"/>
 </branch>
-<status status="PASS" starttime="20231031 08:54:32.092" endtime="20231031 08:54:32.094"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.202"/>
 </if>
-<status status="PASS" starttime="20231031 08:54:32.092" endtime="20231031 08:54:32.094"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.202"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Log" library="BuiltIn">
 <arg>Exception! the current environment "${environment}" is not functionable.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20231031 08:54:32.094" endtime="20231031 08:54:32.094"/>
+<status status="NOT RUN" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.203"/>
 </kw>
-<status status="NOT RUN" starttime="20231031 08:54:32.094" endtime="20231031 08:54:32.094"/>
+<status status="NOT RUN" starttime="20231103 06:54:47.202" endtime="20231103 06:54:47.203"/>
 </branch>
 <branch type="FINALLY">
 <kw name="Log" library="BuiltIn">
 <arg>Finally! the current environment "${environment}" is functionable.</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231031 08:54:32.094" level="INFO">Finally! the current environment "uat" is functionable.</msg>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:32.094"/>
+<msg timestamp="20231103 06:54:47.203" level="INFO">Finally! the current environment "uat" is functionable.</msg>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:47.203"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:32.094"/>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:47.203"/>
 </branch>
-<status status="PASS" starttime="20231031 08:54:32.092" endtime="20231031 08:54:32.094"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.203"/>
 </try>
-<status status="PASS" starttime="20231031 08:54:32.092" endtime="20231031 08:54:32.094"/>
+<status status="PASS" starttime="20231103 06:54:47.201" endtime="20231103 06:54:47.203"/>
 </kw>
 <test id="s1-s1-t1" name="TC1: WS Connect, set timeout, get timeout, assert timeout and close the socket." line="9">
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
@@ -97,18 +97,18 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <var>${websocket session_name}</var>
 <arg>${ws_host_url_arg}/${ws_paths_arg}</arg>
 <arg>header=${headers}</arg>
-<msg timestamp="20231031 08:54:33.267" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116224d90&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:33.267"/>
+<msg timestamp="20231103 06:54:48.246" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6dc10&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:48.246"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${websocket session_name}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:33.268" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116224d90&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:33.268" endtime="20231031 08:54:33.268"/>
+<msg timestamp="20231103 06:54:48.248" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6dc10&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:48.247" endtime="20231103 06:54:48.248"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:33.268"/>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:48.248"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:33.268"/>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:48.249"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Settimeout</arg>
@@ -123,17 +123,17 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <var>${timeout_conversion_to_integer}</var>
 <arg>${timeout}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20231031 08:54:33.269" level="INFO">${timeout_conversion_to_integer} = 60</msg>
-<status status="PASS" starttime="20231031 08:54:33.269" endtime="20231031 08:54:33.270"/>
+<msg timestamp="20231103 06:54:48.251" level="INFO">${timeout_conversion_to_integer} = 60</msg>
+<status status="PASS" starttime="20231103 06:54:48.251" endtime="20231103 06:54:48.251"/>
 </kw>
 <kw name="Settimeout" library="WebSocketClient">
 <arg>${websocket session_name_arg}</arg>
 <arg>timeout=${timeout_conversion_to_integer}</arg>
-<status status="PASS" starttime="20231031 08:54:33.270" endtime="20231031 08:54:33.270"/>
+<status status="PASS" starttime="20231103 06:54:48.252" endtime="20231103 06:54:48.252"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.269" endtime="20231031 08:54:33.270"/>
+<status status="PASS" starttime="20231103 06:54:48.250" endtime="20231103 06:54:48.252"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.269" endtime="20231031 08:54:33.270"/>
+<status status="PASS" starttime="20231103 06:54:48.249" endtime="20231103 06:54:48.252"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Gettimeout</arg>
@@ -145,31 +145,31 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Gettimeout" library="WebSocketClient">
 <var>${ws gettimeout}</var>
 <arg>${websocket session_name_arg}</arg>
-<msg timestamp="20231031 08:54:33.271" level="INFO">${ws gettimeout} = 60</msg>
-<status status="PASS" starttime="20231031 08:54:33.271" endtime="20231031 08:54:33.271"/>
+<msg timestamp="20231103 06:54:48.253" level="INFO">${ws gettimeout} = 60</msg>
+<status status="PASS" starttime="20231103 06:54:48.253" endtime="20231103 06:54:48.253"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ws gettimeout}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:33.271" level="INFO">${ws gettimeout} = 60</msg>
-<status status="PASS" starttime="20231031 08:54:33.271" endtime="20231031 08:54:33.271"/>
+<msg timestamp="20231103 06:54:48.254" level="INFO">${ws gettimeout} = 60</msg>
+<status status="PASS" starttime="20231103 06:54:48.254" endtime="20231103 06:54:48.254"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${gettimeout converted to string}</var>
 <arg>${ws gettimeout}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231031 08:54:33.272" level="INFO">${gettimeout converted to string} = 60</msg>
-<status status="PASS" starttime="20231031 08:54:33.272" endtime="20231031 08:54:33.272"/>
+<msg timestamp="20231103 06:54:48.254" level="INFO">${gettimeout converted to string} = 60</msg>
+<status status="PASS" starttime="20231103 06:54:48.254" endtime="20231103 06:54:48.254"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${gettimeout converted to string}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:33.272" level="INFO">${gettimeout converted to string} = 60</msg>
-<status status="PASS" starttime="20231031 08:54:33.272" endtime="20231031 08:54:33.272"/>
+<msg timestamp="20231103 06:54:48.255" level="INFO">${gettimeout converted to string} = 60</msg>
+<status status="PASS" starttime="20231103 06:54:48.255" endtime="20231103 06:54:48.255"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.271" endtime="20231031 08:54:33.272"/>
+<status status="PASS" starttime="20231103 06:54:48.253" endtime="20231103 06:54:48.255"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.270" endtime="20231031 08:54:33.272"/>
+<status status="PASS" starttime="20231103 06:54:48.253" endtime="20231103 06:54:48.255"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocket BulitIn Response Assertion</arg>
@@ -184,11 +184,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${assertion value}</arg>
 <arg>${result value}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231031 08:54:33.273" endtime="20231031 08:54:33.273"/>
+<status status="PASS" starttime="20231103 06:54:48.256" endtime="20231103 06:54:48.256"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.273" endtime="20231031 08:54:33.273"/>
+<status status="PASS" starttime="20231103 06:54:48.255" endtime="20231103 06:54:48.256"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.272" endtime="20231031 08:54:33.273"/>
+<status status="PASS" starttime="20231103 06:54:48.255" endtime="20231103 06:54:48.256"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Close</arg>
@@ -199,16 +199,16 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <doc>Close the opened WebSocket session to a server.</doc>
 <kw name="Close" library="WebSocketClient">
 <arg>${websocket session_name_arg}</arg>
-<status status="PASS" starttime="20231031 08:54:33.274" endtime="20231031 08:54:33.578"/>
+<status status="PASS" starttime="20231103 06:54:48.256" endtime="20231103 06:54:48.504"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.273" endtime="20231031 08:54:33.578"/>
+<status status="PASS" starttime="20231103 06:54:48.256" endtime="20231103 06:54:48.504"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.273" endtime="20231031 08:54:33.578"/>
+<status status="PASS" starttime="20231103 06:54:48.256" endtime="20231103 06:54:48.505"/>
 </kw>
 <doc>This TC is to Connect, set timeout, get timeout, assert timeout and close the socket.</doc>
 <tag>positive</tag>
 <tag>smoke</tag>
-<status status="PASS" starttime="20231031 08:54:32.094" endtime="20231031 08:54:33.579"/>
+<status status="PASS" starttime="20231103 06:54:47.203" endtime="20231103 06:54:48.505"/>
 </test>
 <test id="s1-s1-t2" name="TC2: WS Connect, get header, status &amp; assert status, header and close the socket with reason." line="22">
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
@@ -228,18 +228,18 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <var>${websocket session_name}</var>
 <arg>${ws_host_url_arg}/${ws_paths_arg}</arg>
 <arg>header=${headers}</arg>
-<msg timestamp="20231031 08:54:34.804" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116224250&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:33.582" endtime="20231031 08:54:34.804"/>
+<msg timestamp="20231103 06:54:49.509" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6d1d0&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:48.508" endtime="20231103 06:54:49.509"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${websocket session_name}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:34.804" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116224250&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:34.804" endtime="20231031 08:54:34.804"/>
+<msg timestamp="20231103 06:54:49.510" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6d1d0&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:49.510" endtime="20231103 06:54:49.510"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.581" endtime="20231031 08:54:34.804"/>
+<status status="PASS" starttime="20231103 06:54:48.507" endtime="20231103 06:54:49.511"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:33.581" endtime="20231031 08:54:34.804"/>
+<status status="PASS" starttime="20231103 06:54:48.507" endtime="20231103 06:54:49.511"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Getheaders</arg>
@@ -251,18 +251,18 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Getheaders" library="WebSocketClient">
 <var>${ws get headers}</var>
 <arg>${websocket session_name_arg}</arg>
-<msg timestamp="20231031 08:54:34.805" level="INFO">${ws get headers} = {'date': 'Tue, 31 Oct 2023 03:24:34 GMT', 'connection': 'upgrade', 'server': 'nginx', 'upgrade': 'websocket', 'sec-websocket-accept': 'BxcDr6tI0UCn18BUv5smUxsucwA=', 'origin': 'https://ws.postman-echo...</msg>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.805"/>
+<msg timestamp="20231103 06:54:49.512" level="INFO">${ws get headers} = {'date': 'Fri, 03 Nov 2023 01:24:49 GMT', 'connection': 'upgrade', 'server': 'nginx', 'upgrade': 'websocket', 'sec-websocket-accept': 'brtORYrzhj09f1hEq6MVB7eGrxw=', 'origin': 'https://ws.postman-echo...</msg>
+<status status="PASS" starttime="20231103 06:54:49.512" endtime="20231103 06:54:49.512"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ws get headers}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:34.805" level="INFO">${ws get headers} = {'date': 'Tue, 31 Oct 2023 03:24:34 GMT', 'connection': 'upgrade', 'server': 'nginx', 'upgrade': 'websocket', 'sec-websocket-accept': 'BxcDr6tI0UCn18BUv5smUxsucwA=', 'origin': 'https://ws.postman-echo...</msg>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.805"/>
+<msg timestamp="20231103 06:54:49.513" level="INFO">${ws get headers} = {'date': 'Fri, 03 Nov 2023 01:24:49 GMT', 'connection': 'upgrade', 'server': 'nginx', 'upgrade': 'websocket', 'sec-websocket-accept': 'brtORYrzhj09f1hEq6MVB7eGrxw=', 'origin': 'https://ws.postman-echo...</msg>
+<status status="PASS" starttime="20231103 06:54:49.512" endtime="20231103 06:54:49.513"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.805"/>
+<status status="PASS" starttime="20231103 06:54:49.511" endtime="20231103 06:54:49.513"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.805"/>
+<status status="PASS" starttime="20231103 06:54:49.511" endtime="20231103 06:54:49.513"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Getstatus</arg>
@@ -274,31 +274,31 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Getstatus" library="WebSocketClient">
 <var>${ws get status}</var>
 <arg>${websocket session_name_arg}</arg>
-<msg timestamp="20231031 08:54:34.806" level="INFO">${ws get status} = 101</msg>
-<status status="PASS" starttime="20231031 08:54:34.806" endtime="20231031 08:54:34.806"/>
+<msg timestamp="20231103 06:54:49.514" level="INFO">${ws get status} = 101</msg>
+<status status="PASS" starttime="20231103 06:54:49.513" endtime="20231103 06:54:49.514"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ws get status}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:34.806" level="INFO">${ws get status} = 101</msg>
-<status status="PASS" starttime="20231031 08:54:34.806" endtime="20231031 08:54:34.806"/>
+<msg timestamp="20231103 06:54:49.514" level="INFO">${ws get status} = 101</msg>
+<status status="PASS" starttime="20231103 06:54:49.514" endtime="20231103 06:54:49.514"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${getstatus converted to string}</var>
 <arg>${ws get status}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231031 08:54:34.806" level="INFO">${getstatus converted to string} = 101</msg>
-<status status="PASS" starttime="20231031 08:54:34.806" endtime="20231031 08:54:34.806"/>
+<msg timestamp="20231103 06:54:49.514" level="INFO">${getstatus converted to string} = 101</msg>
+<status status="PASS" starttime="20231103 06:54:49.514" endtime="20231103 06:54:49.514"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${getstatus converted to string}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:34.806" level="INFO">${getstatus converted to string} = 101</msg>
-<status status="PASS" starttime="20231031 08:54:34.806" endtime="20231031 08:54:34.806"/>
+<msg timestamp="20231103 06:54:49.515" level="INFO">${getstatus converted to string} = 101</msg>
+<status status="PASS" starttime="20231103 06:54:49.515" endtime="20231103 06:54:49.515"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.806"/>
+<status status="PASS" starttime="20231103 06:54:49.513" endtime="20231103 06:54:49.515"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.805" endtime="20231031 08:54:34.806"/>
+<status status="PASS" starttime="20231103 06:54:49.513" endtime="20231103 06:54:49.515"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocket BulitIn Response Assertion</arg>
@@ -313,11 +313,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${assertion value}</arg>
 <arg>${result value}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231031 08:54:34.807" endtime="20231031 08:54:34.807"/>
+<status status="PASS" starttime="20231103 06:54:49.516" endtime="20231103 06:54:49.516"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.807" endtime="20231031 08:54:34.807"/>
+<status status="PASS" starttime="20231103 06:54:49.515" endtime="20231103 06:54:49.516"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.806" endtime="20231031 08:54:34.807"/>
+<status status="PASS" starttime="20231103 06:54:49.515" endtime="20231103 06:54:49.516"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Close With Reason</arg>
@@ -334,16 +334,16 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${websocket session_name_arg}</arg>
 <arg>${ws_status}</arg>
 <arg>${messages}</arg>
-<status status="PASS" starttime="20231031 08:54:34.807" endtime="20231031 08:54:34.809"/>
+<status status="PASS" starttime="20231103 06:54:49.517" endtime="20231103 06:54:49.519"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.807" endtime="20231031 08:54:34.809"/>
+<status status="PASS" starttime="20231103 06:54:49.517" endtime="20231103 06:54:49.519"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.807" endtime="20231031 08:54:34.809"/>
+<status status="PASS" starttime="20231103 06:54:49.516" endtime="20231103 06:54:49.519"/>
 </kw>
 <doc>This TC is to Connect, get header, status &amp; assert status, header and close the socket with reason.</doc>
 <tag>positive</tag>
 <tag>smoke</tag>
-<status status="PASS" starttime="20231031 08:54:33.580" endtime="20231031 08:54:34.809"/>
+<status status="PASS" starttime="20231103 06:54:48.506" endtime="20231103 06:54:49.520"/>
 </test>
 <test id="s1-s1-t3" name="TC3: WS Connect, send text, receive &amp; assert the recieve text and close the socket with reason." line="35">
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
@@ -363,18 +363,18 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <var>${websocket session_name}</var>
 <arg>${ws_host_url_arg}/${ws_paths_arg}</arg>
 <arg>header=${headers}</arg>
-<msg timestamp="20231031 08:54:35.782" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116239610&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:34.810" endtime="20231031 08:54:35.782"/>
+<msg timestamp="20231103 06:54:50.512" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b7e350&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:49.521" endtime="20231103 06:54:50.512"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${websocket session_name}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:35.783" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x116239610&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:35.782" endtime="20231031 08:54:35.783"/>
+<msg timestamp="20231103 06:54:50.513" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b7e350&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:50.513" endtime="20231103 06:54:50.513"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.810" endtime="20231031 08:54:35.783"/>
+<status status="PASS" starttime="20231103 06:54:49.521" endtime="20231103 06:54:50.514"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:34.809" endtime="20231031 08:54:35.783"/>
+<status status="PASS" starttime="20231103 06:54:49.520" endtime="20231103 06:54:50.514"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Send</arg>
@@ -388,11 +388,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Send" library="WebSocketClient">
 <arg>${websocket session_name_arg}</arg>
 <arg>${messages}</arg>
-<status status="PASS" starttime="20231031 08:54:35.785" endtime="20231031 08:54:35.785"/>
+<status status="PASS" starttime="20231103 06:54:50.515" endtime="20231103 06:54:50.515"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:35.784" endtime="20231031 08:54:35.785"/>
+<status status="PASS" starttime="20231103 06:54:50.514" endtime="20231103 06:54:50.515"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:35.784" endtime="20231031 08:54:35.785"/>
+<status status="PASS" starttime="20231103 06:54:50.514" endtime="20231103 06:54:50.516"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Recv</arg>
@@ -404,31 +404,31 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Recv" library="WebSocketClient">
 <var>${websocket receive results}</var>
 <arg>${websocket session_name_arg}</arg>
-<msg timestamp="20231031 08:54:36.026" level="INFO">${websocket receive results} = all is well</msg>
-<status status="PASS" starttime="20231031 08:54:35.786" endtime="20231031 08:54:36.026"/>
+<msg timestamp="20231103 06:54:50.756" level="INFO">${websocket receive results} = all is well</msg>
+<status status="PASS" starttime="20231103 06:54:50.516" endtime="20231103 06:54:50.756"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${websocket receive results}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:36.026" level="INFO">${websocket receive results} = all is well</msg>
-<status status="PASS" starttime="20231031 08:54:36.026" endtime="20231031 08:54:36.026"/>
+<msg timestamp="20231103 06:54:50.756" level="INFO">${websocket receive results} = all is well</msg>
+<status status="PASS" starttime="20231103 06:54:50.756" endtime="20231103 06:54:50.756"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${receive results converted to string}</var>
 <arg>${websocket receive results}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20231031 08:54:36.027" level="INFO">${receive results converted to string} = all is well</msg>
-<status status="PASS" starttime="20231031 08:54:36.027" endtime="20231031 08:54:36.027"/>
+<msg timestamp="20231103 06:54:50.757" level="INFO">${receive results converted to string} = all is well</msg>
+<status status="PASS" starttime="20231103 06:54:50.757" endtime="20231103 06:54:50.757"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${receive results converted to string}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:36.027" level="INFO">${receive results converted to string} = all is well</msg>
-<status status="PASS" starttime="20231031 08:54:36.027" endtime="20231031 08:54:36.027"/>
+<msg timestamp="20231103 06:54:50.757" level="INFO">${receive results converted to string} = all is well</msg>
+<status status="PASS" starttime="20231103 06:54:50.757" endtime="20231103 06:54:50.757"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:35.786" endtime="20231031 08:54:36.027"/>
+<status status="PASS" starttime="20231103 06:54:50.516" endtime="20231103 06:54:50.757"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:35.786" endtime="20231031 08:54:36.027"/>
+<status status="PASS" starttime="20231103 06:54:50.516" endtime="20231103 06:54:50.757"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocket BulitIn Response Assertion</arg>
@@ -443,11 +443,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${assertion value}</arg>
 <arg>${result value}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231031 08:54:36.028" endtime="20231031 08:54:36.029"/>
+<status status="PASS" starttime="20231103 06:54:50.758" endtime="20231103 06:54:50.758"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.028" endtime="20231031 08:54:36.029"/>
+<status status="PASS" starttime="20231103 06:54:50.758" endtime="20231103 06:54:50.758"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.028" endtime="20231031 08:54:36.029"/>
+<status status="PASS" starttime="20231103 06:54:50.757" endtime="20231103 06:54:50.759"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Close With Reason</arg>
@@ -464,16 +464,16 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${websocket session_name_arg}</arg>
 <arg>${ws_status}</arg>
 <arg>${messages}</arg>
-<status status="PASS" starttime="20231031 08:54:36.029" endtime="20231031 08:54:36.031"/>
+<status status="PASS" starttime="20231103 06:54:50.759" endtime="20231103 06:54:50.761"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.029" endtime="20231031 08:54:36.031"/>
+<status status="PASS" starttime="20231103 06:54:50.759" endtime="20231103 06:54:50.761"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.029" endtime="20231031 08:54:36.031"/>
+<status status="PASS" starttime="20231103 06:54:50.759" endtime="20231103 06:54:50.761"/>
 </kw>
 <doc>This TC is to Connect, send text, receive &amp; assert the recieve text and close the socket with reason.</doc>
 <tag>positive</tag>
 <tag>smoke</tag>
-<status status="PASS" starttime="20231031 08:54:34.809" endtime="20231031 08:54:36.031"/>
+<status status="PASS" starttime="20231103 06:54:49.520" endtime="20231103 06:54:50.761"/>
 </test>
 <test id="s1-s1-t4" name="TC4: WS Connect, send binary text, ping and close the socket with reason." line="48">
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
@@ -493,18 +493,18 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <var>${websocket session_name}</var>
 <arg>${ws_host_url_arg}/${ws_paths_arg}</arg>
 <arg>header=${headers}</arg>
-<msg timestamp="20231031 08:54:37.027" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x115300310&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:36.032" endtime="20231031 08:54:37.028"/>
+<msg timestamp="20231103 06:54:51.776" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6e750&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:50.762" endtime="20231103 06:54:51.776"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${websocket session_name}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20231031 08:54:37.029" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x115300310&gt;</msg>
-<status status="PASS" starttime="20231031 08:54:37.028" endtime="20231031 08:54:37.029"/>
+<msg timestamp="20231103 06:54:51.777" level="INFO">${websocket session_name} = &lt;websocket._core.WebSocket object at 0x121b6e750&gt;</msg>
+<status status="PASS" starttime="20231103 06:54:51.776" endtime="20231103 06:54:51.777"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.032" endtime="20231031 08:54:37.029"/>
+<status status="PASS" starttime="20231103 06:54:50.762" endtime="20231103 06:54:51.777"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:36.032" endtime="20231031 08:54:37.029"/>
+<status status="PASS" starttime="20231103 06:54:50.761" endtime="20231103 06:54:51.777"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Send Binary</arg>
@@ -518,11 +518,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Send Binary" library="WebSocketClient">
 <arg>${websocket session_name_arg}</arg>
 <arg>payload=${Payload}</arg>
-<status status="PASS" starttime="20231031 08:54:37.030" endtime="20231031 08:54:37.031"/>
+<status status="PASS" starttime="20231103 06:54:51.778" endtime="20231103 06:54:51.778"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.029" endtime="20231031 08:54:37.031"/>
+<status status="PASS" starttime="20231103 06:54:51.777" endtime="20231103 06:54:51.778"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.029" endtime="20231031 08:54:37.031"/>
+<status status="PASS" starttime="20231103 06:54:51.777" endtime="20231103 06:54:51.778"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Ping</arg>
@@ -536,11 +536,11 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <kw name="Ping" library="WebSocketClient">
 <arg>${websocket session_name_arg}</arg>
 <arg>payload=${Payload}</arg>
-<status status="PASS" starttime="20231031 08:54:37.032" endtime="20231031 08:54:37.032"/>
+<status status="PASS" starttime="20231103 06:54:51.779" endtime="20231103 06:54:51.779"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.032" endtime="20231031 08:54:37.032"/>
+<status status="PASS" starttime="20231103 06:54:51.779" endtime="20231103 06:54:51.779"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.031" endtime="20231031 08:54:37.033"/>
+<status status="PASS" starttime="20231103 06:54:51.778" endtime="20231103 06:54:51.779"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>KW: WebSocketClient Close With Reason</arg>
@@ -557,27 +557,27 @@ Ex: wss://ws.postman-echo.com/raw    header=["User-Agent: MyProgram","x-custom: 
 <arg>${websocket session_name_arg}</arg>
 <arg>${ws_status}</arg>
 <arg>${messages}</arg>
-<status status="PASS" starttime="20231031 08:54:37.033" endtime="20231031 08:54:37.035"/>
+<status status="PASS" starttime="20231103 06:54:51.780" endtime="20231103 06:54:51.781"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.033" endtime="20231031 08:54:37.035"/>
+<status status="PASS" starttime="20231103 06:54:51.780" endtime="20231103 06:54:51.782"/>
 </kw>
-<status status="PASS" starttime="20231031 08:54:37.033" endtime="20231031 08:54:37.035"/>
+<status status="PASS" starttime="20231103 06:54:51.780" endtime="20231103 06:54:51.782"/>
 </kw>
 <doc>This TC is to Connect, send binary text, ping and close the socket with reason.</doc>
 <tag>positive</tag>
 <tag>sanity</tag>
-<status status="PASS" starttime="20231031 08:54:36.031" endtime="20231031 08:54:37.035"/>
+<status status="PASS" starttime="20231103 06:54:50.761" endtime="20231103 06:54:51.782"/>
 </test>
 <test id="s1-s1-t5" name="TC5: WS Connect websocket to null resrve keyword end point." line="60">
 <doc>This TC is to Connect, send text, receive &amp; assert the recieve text and close the socket with reason.</doc>
 <tag>negative</tag>
 <tag>sanity</tag>
-<status status="SKIP" starttime="20231031 08:54:37.036" endtime="20231031 08:54:37.036">Test skipped using '--skip' command line option.</status>
+<status status="SKIP" starttime="20231103 06:54:51.782" endtime="20231103 06:54:51.783">Test skipped using '--skip' command line option.</status>
 </test>
 <doc>This robot file will execute only the raw cases.</doc>
-<status status="PASS" starttime="20231031 08:54:31.833" endtime="20231031 08:54:37.037"/>
+<status status="PASS" starttime="20231103 06:54:46.137" endtime="20231103 06:54:51.783"/>
 </suite>
-<status status="PASS" starttime="20231031 08:54:31.827" endtime="20231031 08:54:37.038"/>
+<status status="PASS" starttime="20231103 06:54:46.130" endtime="20231103 06:54:51.784"/>
 </suite>
 <statistics>
 <total>
