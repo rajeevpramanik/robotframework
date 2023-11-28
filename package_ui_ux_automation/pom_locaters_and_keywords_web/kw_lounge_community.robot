@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   This setting is for the lounge community module settings.
+Documentation   This setting is for the lounge webcommunity module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
@@ -38,11 +38,11 @@ ${lounge leave permission popup close or X element xpath}       xpath\=//body/di
 
 ${chrome play audio image}                                     ${lounge_images}chrome_lounge_sound_test_play_icon.png
 ${firefox play audio image}                                     ${lounge_images}firefox_lounge_sound_test_play_icon.png
-${checkbox image}                                       ${community_login_page}community_login_i_agree_checkbox.png
+${checkbox image}                                       ${webcommunity_login_page}webcommunity_login_i_agree_checkbox.png
 
 ***Keywords***
-KW: Go to the community site.
-    Wait Until Keyword Succeeds         15sec       1sec        QWeb.Go To       ${event community url}
+KW: Go to the webcommunity site.
+    Wait Until Keyword Succeeds         15sec       1sec        QWeb.Go To       ${event webcommunity url}
 
 KW: Verify the email id field is present.
     Wait Until Keyword Succeeds         15sec       1sec        Verify Element      ${email field xpath}
@@ -111,7 +111,7 @@ KW: Select the add cover page.
 KW: Click on the save button on the Select Language & Time zone popup.
     Wait Until Keyword Succeeds         30sec       10sec        QWeb.Click Text     Save        anchor=You can change this setting later from the profile dropdown
 
-KW: Click on the lounge module on the top bar community page.
+KW: Click on the lounge module on the top bar webcommunity page.
     Wait Until Keyword Succeeds         30sec       10sec        QWeb.Click Text     Lounge        anchor=Rooms
 
 KW: Verify lounge table seat one is present.

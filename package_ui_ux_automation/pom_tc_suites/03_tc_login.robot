@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   This setting is for the signup module settings.
 Resource        ../setup_teardown/setup_teardown_func.robot
-Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${edge_browser}      ${admindashboardurl}       ${flag true}
+Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${edge_browser}      ${admincmsurl}       ${flag true}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -27,7 +27,7 @@ TC1: [POSITIVE] [Login page]- organizer login with valid credentials.
     run keyword and continue on Failure         KW: Refresh page.
     run keyword and continue on Failure         KW: Read excel for email address.
     run keyword and continue on Failure         KW: Type Text       ${email field}          ${read_email}               ${EMPTY}                ${waiting duration}    ${index}     ${flag true}    ${flag true}
-    run keyword and continue on Failure         KW: Type Text       ${password field}       ${admindashboardPassword}   ${EMPTY}                ${waiting duration}    ${index}     ${flag true}    ${flag true}
+    run keyword and continue on Failure         KW: Type Text       ${password field}       ${admincmsPassword}   ${EMPTY}                ${waiting duration}    ${index}     ${flag true}    ${flag true}
     run keyword and continue on Failure         KW: Click Text      ${login button text}    ${EMPTY}                    ${waiting duration}     ${flag true}    ${flag true}    ${flag true}    #${flag true}
     run keyword and continue on Failure         KW: Fetch org fname, Lname from the excel.
     run keyword and continue on Failure         KW: Verify Text     ${read_fname}           ${EMPTY}                    ${waiting duration}     ${flag true}    ${flag true}

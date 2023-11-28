@@ -13,12 +13,12 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 
 
 *** Variables ***
-${The work book}        ../package_dashboard_community/test_excel_ddt/testfile.xlsx
+${The work book}        ../package_cms_webcommunity/test_excel_ddt/testfile.xlsx
 ${download_folder}      /Users/rajeev/Downloads/
-${destination_folder}   ../package_dashboard_community/test_excel_ddt/people
-${people_folder}        ../package_dashboard_community/test_excel_ddt/people/
-${rooms destination_folder}     ../package_dashboard_community/test_excel_ddt/rooms
-${rooms_folder}     ../package_dashboard_community/test_excel_ddt/rooms/
+${destination_folder}   ../package_cms_webcommunity/test_excel_ddt/people
+${people_folder}        ../package_cms_webcommunity/test_excel_ddt/people/
+${rooms destination_folder}     ../package_cms_webcommunity/test_excel_ddt/rooms
+${rooms_folder}     ../package_cms_webcommunity/test_excel_ddt/rooms/
 
 
 *** Keywords ***
@@ -239,7 +239,7 @@ KW: Writing/Adding single row data to the people excel sheet.
 
     run keyword and continue on Failure             KW: To save & close the workbook to the specified path.
 
-KW: Read the last row of the people excel sheet and assert on the dashboard people list.
+KW: Read the last row of the people excel sheet and assert on the cms people list.
     run keyword and continue on Failure             KW: Open people excel.
     run keyword and continue on Failure             KW: Interacting with the Excel sheet Attendee Data.
 

@@ -81,7 +81,7 @@ KW: Expected the sso side panel, cancel button is in enabled mode and visible.
     Verify Element      ${sso side frame cancel button xpath}
 
 KW: Get the sso icon using qweb get icon.
-    Capture Icon        xpath\=//body/main[@id\='root']/div[2]/section[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]        /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community/sikuli_stored_images/         custom_screenshot_name_123.png
+    Capture Icon        xpath\=//body/main[@id\='root']/div[2]/section[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]        /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_cms_webcommunity/sikuli_stored_images/         custom_screenshot_name_123.png
 
 KW: Verifying the sso security icon visibility.
     Verify Icon         ${security sso icon image}

@@ -3,7 +3,7 @@ Documentation   This setting is for creating tickets and purchasing.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -74,7 +74,7 @@ TC2: [POSITIVE] [integration]- Click the connect button and perform action on th
     run keyword and continue on Failure             KW: Click the connect button on the sidepanel is present.
     run keyword and continue on Failure             KW: Verify the salesforce authenticate iframe is present upon clicking the connect.
 
-TC3: [POSITIVE] [integration]- Salesforce authentication and linking to dashboard.
+TC3: [POSITIVE] [integration]- Salesforce authentication and linking to cms.
     [Documentation]     This tc's is going perform delete operation for all the created events.
     [Tags]              positive
     # Skip     Skipping the test case

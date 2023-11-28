@@ -121,7 +121,7 @@ KW: Verify sign up elements with sikuli process.
     ...     else        fatal error
  
 KW: Verify login sections image with sikuli process.
-    Capture Icon        xpath\=//img[@alt\='Event Dashboard - Banner']          /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community/sikuli_stored_images      login_banner.png
+    Capture Icon        xpath\=//img[@alt\='Event cms - Banner']          /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_cms_webcommunity/sikuli_stored_images      login_banner.png
 
 KW: Verify sign up sections elements with sikuli process.
     SikuliLibrary.Add Image Path              ${signup_section_image}

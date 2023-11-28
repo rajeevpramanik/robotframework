@@ -31,13 +31,13 @@ Resource        ../pom_locaters_and_keywords_web/kw_integration_salesforce.robot
 Resource        ../pom_locaters_and_keywords_web/kw_integration_sso_validating.robot
 Resource        ../pom_locaters_and_keywords_web/kw_events.robot
 Resource        ../pom_locaters_and_keywords_web/kw_people_bulk_upload.robot
-Resource        ../pom_locaters_and_keywords_web/kw_lounge_dashboard.robot
-Resource        ../pom_locaters_and_keywords_web/kw_lounge_community.robot
-Resource        ../pom_locaters_and_keywords_web/kw_room_dashboard.robot
-Resource        ../pom_locaters_and_keywords_web/kw_branding_dashboard.robot
-Resource        ../pom_locaters_and_keywords_web/kw_branding_community.robot
+Resource        ../pom_locaters_and_keywords_web/kw_lounge_cms.robot
+Resource        ../pom_locaters_and_keywords_web/kw_lounge_webcommunity.robot
+Resource        ../pom_locaters_and_keywords_web/kw_room_cms.robot
+Resource        ../pom_locaters_and_keywords_web/kw_branding_cms.robot
+Resource        ../pom_locaters_and_keywords_web/kw_branding_webcommunity.robot
 Resource        ../pom_locaters_and_keywords_web/kw_delete_events.robot
-Resource        ../pom_locaters_and_keywords_web/kw_ticketing_dashboard_community.robot
+Resource        ../pom_locaters_and_keywords_web/kw_ticketing_cms_webcommunity.robot
 Resource        ../pom_locaters_and_keywords_web/kw_cookies_policy.robot
 Resource        ../pom_locaters_and_keywords_web/kw_logout.robot
 Resource        ../pom_locaters_and_keywords_web/kw_chargebee_add_org.robot
@@ -49,10 +49,10 @@ ${proxy ip xpath}           xpath\=(//*[starts-with(@class,'')]//tbody//tr//td)[
 ${port number xpath}        xpath\=(//*[starts-with(@class,'')]//tbody//tr//td)[2]
 
 ${environment}              
-${superadmindashboardurl}       https://admin.${environment}.demopalipoint.com
+${superadmincmsurl}       https://admin.${environment}.demopalipoint.com
 ${superadminPassword}
-${admindashboardurl}            https://newdashboard.${environment}.demopalipoint.com
-${admindashboardPassword}       palipointmasterpassword
+${admincmsurl}            https://newcms.${environment}.demopalipoint.com
+${admincmsPassword}       palipointmasterpassword
 
 ${chargebeeurl}                 https://app.chargebee.com
 ${chargebee username}           rajeev@palipoint.com

@@ -3,7 +3,7 @@ Documentation   This setting is for the signup module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}      ${flag false}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}      ${flag false}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -98,7 +98,7 @@ TC4: [POSITIVE] [Overview page]- Interaction with overview module for coping the
     run keyword and continue on Failure             KW: Copy the event url.
     run keyword and continue on Failure             KW: Refresh page.
 
-TC5: [POSITIVE] [Setting page]- Save or change the default login code on the dashboard.
+TC5: [POSITIVE] [Setting page]- Save or change the default login code on the cms.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case
@@ -121,9 +121,9 @@ TC6: [POSITIVE] [Overview page]- Open browser for verification and validation.
 #    Skip     Skipping the test case
 #    Pass Execution      Passing the test case   deprecated	-regression
 #    Fail                Failing the text case   Deprecated  Smoke Test
-    run keyword and continue on Failure             KW: Launch Browser Common Keyword       ${firefox_browser}           ${event community url}     ${flag false}
+    run keyword and continue on Failure             KW: Launch Browser Common Keyword       ${firefox_browser}           ${event webcommunity url}     ${flag false}
     run keyword and continue on Failure             KW: Firefox Return Browser       
     run keyword and continue on Failure             KW: Verify the email id field is present.
     run keyword and continue on Failure             KW: Verify the continue button is present.
-    run keyword and continue on Failure             KW: Condition to verify and validate by saving, accepting or rejecting all community cookies.
+    run keyword and continue on Failure             KW: Condition to verify and validate by saving, accepting or rejecting all webcommunity cookies.
     run keyword and continue on Failure             KW: Minimize the Browser_Name window.   ${return_firefox_browser}

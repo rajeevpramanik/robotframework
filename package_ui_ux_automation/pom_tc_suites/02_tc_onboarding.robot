@@ -3,7 +3,7 @@ Documentation   This setting is for the signup module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}      ${flag false}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}      ${flag false}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 

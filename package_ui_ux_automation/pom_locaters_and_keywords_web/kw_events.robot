@@ -280,8 +280,8 @@ KW: Verify green success alert for event unpublish.
 
 KW: Copy the event url.
     KW: Get Text        ${event url on the overview module xpath}       ${Copy current url anchor}      ${waiting secs}     #${flag true}
-    ${event community url}      set variable     ${get text}
-    Set Global variable     ${event community url}
+    ${event webcommunity url}      set variable     ${get text}
+    Set Global variable     ${event webcommunity url}
     
 KW: Verify internal event type option displaying.
     KW: Verify Element      ${event type internal xpath}     ${waiting duration}     ${flag true}    ${flag true}  ${flag true}

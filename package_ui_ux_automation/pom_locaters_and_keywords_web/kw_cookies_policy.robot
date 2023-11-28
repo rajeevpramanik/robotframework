@@ -16,16 +16,16 @@ ${cookies save button xpath}                        xpath\=//body/main[@id\='roo
 ${cookies accept all button xpath}                  xpath\=//body/main[@id\='root']/div[2]/div[1]/div[5]/button[2]
 ${cookies reject all button xpath}                  xpath\=//body/main[@id\='root']/div[2]/div[1]/div[5]/button[3]
 
-${community cookies banner view element xpath}      xpath\=(//div[@class\='cookieBlock bottom left boxView'])[1]
-${community cookies save button xpath}              xpath\=//button[normalize-space()\='Accept All']
-${community cookies accept all button xpath}              xpath\=//button[normalize-space()\='Accept All']
-${community cookies reject all button xpath}              xpath\=//button[normalize-space()\='Reject All']
-${community cookies button xpath}                           xpath\=//div[@class\='cookieBtn']//button[@type\='button']
+${webcommunity cookies banner view element xpath}      xpath\=(//div[@class\='cookieBlock bottom left boxView'])[1]
+${webcommunity cookies save button xpath}              xpath\=//button[normalize-space()\='Accept All']
+${webcommunity cookies accept all button xpath}              xpath\=//button[normalize-space()\='Accept All']
+${webcommunity cookies reject all button xpath}              xpath\=//button[normalize-space()\='Reject All']
+${webcommunity cookies button xpath}                           xpath\=//div[@class\='cookieBtn']//button[@type\='button']
 
 ***Keywords***
 KW: Verify the Cookie option is element presence to return true or false.
-    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${community cookies banner view element xpath}
-    ${true or false for cookies element on the login page}      Wait Until Keyword Succeeds         10sec       1sec        Is Element      ${community cookies banner view element xpath}
+    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${webcommunity cookies banner view element xpath}
+    ${true or false for cookies element on the login page}      Wait Until Keyword Succeeds         10sec       1sec        Is Element      ${webcommunity cookies banner view element xpath}
     Set Global Variable     ${true or false for cookies element on the login page}
 
 KW: Verify the Cookie option element presence.
@@ -68,30 +68,30 @@ KW: Verify the green success alert after save, accept or reject.
     Verify Element Text       ${branding saving green success alert xpath}      Success
     Verify Element Text       ${branding saving green success alert xpath}      Record Saved Successfully
 
-KW: Community cookies, verify the text displayes.
+KW: webcommunity cookies, verify the text displayes.
     Wait Until Keyword Succeeds         10sec       1sec        Verify All      We use cookies to improve your experience on our site, We use essential and optional cookies, You may go through our Cookie Policy to understand how we use the cookies, You may change your settings at any time or accept the default settings
 
-KW: Community cookies, verify the save element displayes.
-    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${community cookies save button xpath}
+KW: webcommunity cookies, verify the save element displayes.
+    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${webcommunity cookies save button xpath}
 
-KW: Community cookies, verify the accept all element displayes.
-    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${community cookies accept all button xpath}
+KW: webcommunity cookies, verify the accept all element displayes.
+    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${webcommunity cookies accept all button xpath}
 
-KW: Community cookies, verify the reject all element displayes.
-    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${community cookies reject all button xpath}
+KW: webcommunity cookies, verify the reject all element displayes.
+    Wait Until Keyword Succeeds         10sec       1sec        Verify Element      ${webcommunity cookies reject all button xpath}
 
-KW: Community cookies, click on accept all element.
-    Wait Until Keyword Succeeds         10sec       1sec        QWeb.Click Element      ${community cookies save button xpath}        js=true
+KW: webcommunity cookies, click on accept all element.
+    Wait Until Keyword Succeeds         10sec       1sec        QWeb.Click Element      ${webcommunity cookies save button xpath}        js=true
 
 KW: Verify the cookies button element is present after saving, rejecting or accepting.
-    Verify Element      ${community cookies button xpath}
+    Verify Element      ${webcommunity cookies button xpath}
 
-KW: Condition to verify and validate by saving, accepting or rejecting all community cookies.
+KW: Condition to verify and validate by saving, accepting or rejecting all webcommunity cookies.
     KW: Verify the Cookie option is element presence to return true or false.
-    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Community cookies, verify the text displayes.
-    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Community cookies, verify the save element displayes.
-    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Community cookies, verify the accept all element displayes.
-    # Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Community cookies, verify the reject all element displayes.
-    # Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Community cookies, click on accept all element.
+    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: webcommunity cookies, verify the text displayes.
+    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: webcommunity cookies, verify the save element displayes.
+    Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: webcommunity cookies, verify the accept all element displayes.
+    # Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: webcommunity cookies, verify the reject all element displayes.
+    # Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: webcommunity cookies, click on accept all element.
     # Run Keyword if      "${true or false for cookies element on the login page}" == "True"      Run Keyword And Continue On Failure         KW: Verify the cookies button element is present after saving, rejecting or accepting.
 

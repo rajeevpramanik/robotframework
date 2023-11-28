@@ -43,8 +43,8 @@ KW: Click on palipointv2stg(v2rel) TEST Site.
     QWeb.Click Text      TEST Site      anchor=4
 
 KW: Condition to click the test site for the env specific.
-    Run Keyword If      '${admindashboardurl}'=='https://newdashboard.v2release.demopalipoint.com'       Run Keyword         KW: Click on palipointv2stg(v2rel) TEST Site.
-    Run Keyword If      '${admindashboardurl}'=='https://newdashboard.v2qat.demopalipoint.com'           Run Keyword         KW: Click on palipointv2qat TEST Site.
+    Run Keyword If      '${admincmsurl}'=='https://newcms.v2release.demopalipoint.com'       Run Keyword         KW: Click on palipointv2stg(v2rel) TEST Site.
+    Run Keyword If      '${admincmsurl}'=='https://newcms.v2qat.demopalipoint.com'           Run Keyword         KW: Click on palipointv2qat TEST Site.
 
 KW: Click on Customer section to goto details page.
     QWeb.Click Text      Customers      anchor=Home

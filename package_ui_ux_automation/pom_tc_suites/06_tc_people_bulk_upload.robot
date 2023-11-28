@@ -3,7 +3,7 @@ Documentation   This setting is for the signup module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -58,7 +58,7 @@ TC1: [POSITIVE] [People page]- Interaction with people bulk upload excel and val
     run keyword and continue on Failure             KW: Click on ADD button.
     run keyword and continue on Failure             KW: Verify the green success alert after uploading the people excelsheet and clicking the add button.
     run keyword and continue on Failure             KW: Refresh page.
-    run keyword and continue on Failure             KW: Read the last row of the people excel sheet and assert on the dashboard people list.
+    run keyword and continue on Failure             KW: Read the last row of the people excel sheet and assert on the cms people list.
 
 
 TC2: [POSITIVE] [People page]- Interaction with people manual addition and validating.
@@ -92,7 +92,7 @@ TC2: [POSITIVE] [People page]- Interaction with people manual addition and valid
     run keyword and continue on Failure             KW: Verify the green success alert after adding the single people.
     run keyword and continue on Failure             KW: Verify the fname, lname and the email entered manually.
 
-TC3: [POSITIVE] [People page]- Interaction with people manual addition and try validating for community branding.
+TC3: [POSITIVE] [People page]- Interaction with people manual addition and try validating for webcommunity branding.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case

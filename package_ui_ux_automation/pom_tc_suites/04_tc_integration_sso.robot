@@ -6,7 +6,7 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 
 
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}      ${flag false}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}      ${flag false}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -64,7 +64,7 @@ TC2: [POSITIVE] [Integration page]- Selecting SSO Vendor with Sikuli.
     run keyword and continue on Failure             KW: Stop SIKULI SERVER Process.
 
 
-TC3: [POSITIVE] [Integration page]- Switching from sso tab to dashboard tab and vice versa.
+TC3: [POSITIVE] [Integration page]- Switching from sso tab to cms tab and vice versa.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
     # Skip     Skipping the test case
@@ -110,7 +110,7 @@ TC4: [POSITIVE] [Integration page]- Verifying the connected, gearbox, disconnect
     run keyword and continue on Failure             KW: Assert the configuration and connection title is displayed.
     run keyword and continue on Failure             KW: Assert the org name, domain along with the excel sheet.
 
-TC5: [POSITIVE] [Integration page]- Disconnecting the sso and verifying the alert and Switching back to dashboard.
+TC5: [POSITIVE] [Integration page]- Disconnecting the sso and verifying the alert and Switching back to cms.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case
@@ -127,7 +127,7 @@ TC5: [POSITIVE] [Integration page]- Disconnecting the sso and verifying the aler
     run keyword and continue on Failure             KW: Click on the popup confirm button.
     run keyword and continue on Failure             KW: Success alert for Disconnecting.
 
-TC6: [POSITIVE] [Integration page]- Reconnectin the sso and verifying the alert and Switching back to dashboard.
+TC6: [POSITIVE] [Integration page]- Reconnectin the sso and verifying the alert and Switching back to cms.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case

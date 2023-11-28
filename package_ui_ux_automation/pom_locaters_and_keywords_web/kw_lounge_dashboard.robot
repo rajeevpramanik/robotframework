@@ -4,7 +4,7 @@ Documentation   This setting is for the signup module settings.
 Resource        ../setup_teardown/setup_teardown_func.robot
 
 ***Variables***
-${dashboard event lounge xpath}                         xpath\=//span[normalize-space()\='LOUNGE']
+${cms event lounge xpath}                         xpath\=//span[normalize-space()\='LOUNGE']
 ${add lounge table button center xpath}                 xpath\=//span[normalize-space()\='Add Lounge Tables']
 ${add lounge table button top right xpath}              xpath\=//span[normalize-space()\='Add LOUNGE TABLES']
 ${manage slots button xpath}                            xpath\=//span[normalize-space()\='MANAGE Slots']
@@ -22,7 +22,7 @@ ${created lounge on the listing page xpath}             xpath\=//body/main[@id\=
 ${edit lounge xpath}                                    xpath\=//body//main[@id\='root']//section//section//div//div//div//div//div//div//button[1]//span[1]//*[name()\='svg']
 ${crop and save button xpath}                           xpath\=//body/div[@role\='presentation']/div/div/div/div/div/button[1]
 
-${lounge images upload path}                            /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community/uploading_images/lounge/
+${lounge images upload path}                            /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_cms_webcommunity/uploading_images/lounge/
 ${panda image}                                          ${lounge images upload path}Lounge_panda_256_256.png
 ${edit_image}                                           ${lounge_images}edit_icon.png
 ${delete_image}                                         ${lounge_images}delete_icon.png
@@ -30,7 +30,7 @@ ${delete_image}                                         ${lounge_images}delete_i
 
 ***Keywords***
 KW: Check lounge side module is present or not.
-    Wait Until Keyword Succeeds         30sec       10sec        Is Element      ${dashboard event lounge xpath}
+    Wait Until Keyword Succeeds         30sec       10sec        Is Element      ${cms event lounge xpath}
 
 KW: Click on the lounge module side panel.
     QWeb.Click Text      LOUNGE      anchor=MEETINGS

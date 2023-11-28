@@ -4,7 +4,7 @@ Documentation   This setting is for the signup module settings.
 Resource        ../setup_teardown/setup_teardown_func.robot
 
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}      ${flag true}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}      ${flag true}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -15,8 +15,8 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 
 
 *** Test Cases ***
-# TC1:[POSITIVE] [Login page]- compare the event dashboard banner image with the stored image.
-#     [Documentation]     This tc's in the login page will compare the event dashboard banner image with the stored image.
+# TC1:[POSITIVE] [Login page]- compare the event cms banner image with the stored image.
+#     [Documentation]     This tc's in the login page will compare the event cms banner image with the stored image.
 #     [Tags]              visual
 #     Skip     Skipping the test case
 # #    Pass Execution      Passing the test case   deprecated	-regression
@@ -39,8 +39,8 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 #     Run Keyword And Continue On Failure     KW: Verify clicking "CREATE AN ACCOUNT" element is redirecting to sign up page.
 
 
-# TC3:[POSITIVE] [Signup page]- compare the event dashboard banner image with the stored image.
-#     [Documentation]     This tc's in the signup page will compare the event dashboard banner image with the stored image.
+# TC3:[POSITIVE] [Signup page]- compare the event cms banner image with the stored image.
+#     [Documentation]     This tc's in the signup page will compare the event cms banner image with the stored image.
 #     [Tags]              visual
 #     Skip     Skipping the test case
 # #    Pass Execution      Passing the test case   deprecated	-regression

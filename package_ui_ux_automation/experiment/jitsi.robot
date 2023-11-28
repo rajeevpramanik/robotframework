@@ -21,7 +21,7 @@ KW: Scrap the proxy ip and the port number from sslproxies.
 
 ***Test Cases***
 TC1 open chrome
-    Empty Directory    /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community/experiment/screenshots/
+    Empty Directory    /Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_cms_webcommunity/experiment/screenshots/
     Open Browser        https://meet.jit.si/QWebtesting123      chrome    --allow-running-insecure-content, --use-fake-ui-for-media-stream
     # Open Browser        https://meet.jit.si/QWebtesting123      firefox     -headless   --allow-running-insecure-content, prefs="permissions.default.microphone":"1", "permissions.default.camera":"1"
     Maximize Window

@@ -3,7 +3,7 @@ Documentation   This setting is for the signup module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -35,7 +35,7 @@ TC1: [POSITIVE] [Setting page]- Save or change the default login code.
     # run keyword and continue on Failure             KW: Save success green alert after saving the code.
 
 
-TC2: [POSITIVE] [Community page]- Interaction with lounge by the uploaded user.
+TC2: [POSITIVE] [webcommunity page]- Interaction with lounge by the uploaded user.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case
@@ -45,10 +45,10 @@ TC2: [POSITIVE] [Community page]- Interaction with lounge by the uploaded user.
     # run keyword and continue on Failure             KW: Pause the execution.
 
     run keyword and continue on Failure             KW: Open new tab.
-    run keyword and continue on Failure             KW: Go to the community site.
+    run keyword and continue on Failure             KW: Go to the webcommunity site.
     run keyword and continue on Failure             KW: Verify the email id field is present.
     run keyword and continue on Failure             KW: Verify the continue button is present.
-    run keyword and continue on Failure             KW: Community cookies, click on accept all element.
+    run keyword and continue on Failure             KW: webcommunity cookies, click on accept all element.
     run keyword and continue on Failure             KW: Open people excel.
     run keyword and continue on Failure             KW People excel, switch to sheet Attendee Data
     run keyword and continue on Failure             KW: Interacting with the Excel sheet Attendee Data.
@@ -61,9 +61,9 @@ TC2: [POSITIVE] [Community page]- Interaction with lounge by the uploaded user.
     run keyword and continue on Failure             KW: Type default code.
     run keyword and continue on Failure             KW: Check the i agree checkbox.
     run keyword and continue on Failure             KW: Click on the verify button.
-    run keyword and continue on Failure             KW: Wait for the element on the community page.
+    run keyword and continue on Failure             KW: Wait for the element on the webcommunity page.
 
-TC3: [POSITIVE] [Community On-Boarding page]- Filling data on the on-boarding page.
+TC3: [POSITIVE] [webcommunity On-Boarding page]- Filling data on the on-boarding page.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case
@@ -84,7 +84,7 @@ TC3: [POSITIVE] [Community On-Boarding page]- Filling data on the on-boarding pa
     run keyword and continue on Failure             KW: On-Boarding profile details next button.
     run keyword and continue on Failure             KW: Click on the save button on the Select Language & Time zone popup.
 
-TC4: [POSITIVE] [Community Lounge page]- Launch the lounge table on the community side.
+TC4: [POSITIVE] [webcommunity Lounge page]- Launch the lounge table on the webcommunity side.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -93,7 +93,7 @@ TC4: [POSITIVE] [Community Lounge page]- Launch the lounge table on the communit
 
     # run keyword and continue on Failure             KW: Pause the execution.
 
-    run keyword and continue on Failure             KW: Click on the lounge module on the top bar community page.
+    run keyword and continue on Failure             KW: Click on the lounge module on the top bar webcommunity page.
     run keyword and continue on Failure             KW: Verify the lounge name on the listing page.
     run keyword and continue on Failure             KW: Verify lounge table seat one is present.
     run keyword and continue on Failure             KW: Verify lounge table seat fourth is present.
@@ -102,7 +102,7 @@ TC4: [POSITIVE] [Community Lounge page]- Launch the lounge table on the communit
     run keyword and continue on Failure             KW: Verify the alert is present or the popup.
 
 
-TC5: [POSITIVE] [Community Lounge page]- Verify the popups button, options and check the compability test of the system.
+TC5: [POSITIVE] [webcommunity Lounge page]- Verify the popups button, options and check the compability test of the system.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -134,7 +134,7 @@ TC5: [POSITIVE] [Community Lounge page]- Verify the popups button, options and c
     run keyword and continue on Failure             KW: Minimize the Browser_Name window.
 
 
-TC6: [POSITIVE] [Dashboard page]- Open other browser to join the 2nd lounge seat.
+TC6: [POSITIVE] [cms page]- Open other browser to join the 2nd lounge seat.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -143,8 +143,8 @@ TC6: [POSITIVE] [Dashboard page]- Open other browser to join the 2nd lounge seat
 
     # run keyword and continue on Failure             KW: Pause the execution.
     run keyword and continue on Failure             KW: Switch to browsers.     ${tab2}
-    run keyword and continue on Failure             KW: Maximize the Community_Browser window.
-    run keyword and continue on Failure             KW: Go to the community site.
+    run keyword and continue on Failure             KW: Maximize the webcommunity_Browser window.
+    run keyword and continue on Failure             KW: Go to the webcommunity site.
     run keyword and continue on Failure             KW: Refresh page.
     run keyword and continue on Failure             KW: Verify the email id field is present.
     run keyword and continue on Failure             KW: Verify the continue button is present.
@@ -155,9 +155,9 @@ TC6: [POSITIVE] [Dashboard page]- Open other browser to join the 2nd lounge seat
     run keyword and continue on Failure             KW: Type default code.
     run keyword and continue on Failure             KW: Check the i agree checkbox.
     run keyword and continue on Failure             KW: Click on the verify button.
-    run keyword and continue on Failure             KW: Wait for the element on the community page.
+    run keyword and continue on Failure             KW: Wait for the element on the webcommunity page.
 
-TC7: [POSITIVE] [Community On-Boarding page]- Filling data on the 2nd browser opened on-boarding page.
+TC7: [POSITIVE] [webcommunity On-Boarding page]- Filling data on the 2nd browser opened on-boarding page.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -178,7 +178,7 @@ TC7: [POSITIVE] [Community On-Boarding page]- Filling data on the 2nd browser op
     run keyword and continue on Failure             KW: On-Boarding profile details next button.
     run keyword and continue on Failure             KW: Click on the save button on the Select Language & Time zone popup.
 
-TC8: [POSITIVE] [Community Lounge page]- Launch the lounge table on the 2nd browser community side.
+TC8: [POSITIVE] [webcommunity Lounge page]- Launch the lounge table on the 2nd browser webcommunity side.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -186,14 +186,14 @@ TC8: [POSITIVE] [Community Lounge page]- Launch the lounge table on the 2nd brow
 #    Fail                Failing the text case   Deprecated  Smoke Test
 
     # run keyword and continue on Failure             KW: Pause the execution.
-    run keyword and continue on Failure             KW: Click on the lounge module on the top bar community page.
+    run keyword and continue on Failure             KW: Click on the lounge module on the top bar webcommunity page.
     run keyword and continue on Failure             KW: Verify the lounge name on the listing page.
     run keyword and continue on Failure             KW: Verify lounge table seat one is present.
     run keyword and continue on Failure             KW: Verify lounge table seat fourth is present.
     # run keyword and continue on Failure             KW: Refresh page.
     run keyword and continue on Failure             KW: Click the lounge table seat four.
 
-TC9: [POSITIVE] [Community Lounge page]- Verify the popups button, options and check the compability test of the 2nd browser system.
+TC9: [POSITIVE] [webcommunity Lounge page]- Verify the popups button, options and check the compability test of the 2nd browser system.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case
@@ -237,7 +237,7 @@ TC9: [POSITIVE] [Community Lounge page]- Verify the popups button, options and c
     run keyword and continue on Failure             KW: Click on the switching view button with in the lounge table below the screen.
     run keyword and continue on Failure             KW: Verify the fname & lname on the lounge list view manually added.
     run keyword and continue on Failure             KW: Verify the fname & lname on the lounge list view bulk upload added.
-    run keyword and continue on Failure             KW: Minimize the Community_Browser window.
+    run keyword and continue on Failure             KW: Minimize the webcommunity_Browser window.
     run keyword and continue on Failure             KW: Switch to browsers.     ${tab1}
     run keyword and continue on Failure             KW: Maximize the Browser_Name window.
     run keyword and continue on Failure             KW: Switch to tab.      ${tab2}
@@ -258,7 +258,7 @@ TC9: [POSITIVE] [Community Lounge page]- Verify the popups button, options and c
     run keyword and continue on Failure             KW: Verify the fname & lname on the lounge list view manually added.
     run keyword and continue on Failure             KW: Verify the fname & lname on the lounge list view bulk upload added.
     run keyword and continue on Failure             KW: Switch to browsers.     ${tab2}
-    run keyword and continue on Failure             KW: Maximize the Community_Browser window.
+    run keyword and continue on Failure             KW: Maximize the webcommunity_Browser window.
     run keyword and continue on Failure             KW: Switch to tab.      ${tab1}
     # run keyword and continue on Failure             KW: Switch to browsers.     ${tabnew}
     # run keyword and continue on Failure             KW: Minimize the Browser_Name window.
@@ -282,9 +282,9 @@ TC9: [POSITIVE] [Community Lounge page]- Verify the popups button, options and c
     run keyword and continue on Failure             KW: Verify the email id field is present.
     run keyword and continue on Failure             KW: Verify the continue button is present.
     run keyword and continue on Failure             KW: Close current window tab.
-    # run keyword and continue on Failure             KW: Condition to verify and validate by saving, accepting or rejecting all community cookies.
+    # run keyword and continue on Failure             KW: Condition to verify and validate by saving, accepting or rejecting all webcommunity cookies.
 
-TC10: [POSITIVE] [Dashboard page]- Switch to the dashboard.
+TC10: [POSITIVE] [cms page]- Switch to the cms.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive        lounge
 #    Skip     Skipping the test case

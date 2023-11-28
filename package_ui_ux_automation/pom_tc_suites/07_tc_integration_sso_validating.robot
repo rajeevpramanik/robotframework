@@ -3,7 +3,7 @@ Documentation   This setting is for the signup module settings.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-#Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${chrome_browser}       ${event community url}
+#Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${chrome_browser}       ${event webcommunity url}
 #Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -25,16 +25,16 @@ TC1: [POSITIVE] [Events page]- Interaction with event listing page.
     # run keyword and continue on Failure             KW: Click on the setting module.
     # run keyword and continue on Failure             KW: Click on the vertical tab login option module.
 
-    run keyword and continue on Failure             KW: Verify community sso login element is present.
+    run keyword and continue on Failure             KW: Verify webcommunity sso login element is present.
     run keyword and continue on Failure             KW: Click on the sso login element.
 
-    run keyword and continue on Failure             KW: Verify community sso login google email element is present.
+    run keyword and continue on Failure             KW: Verify webcommunity sso login google email element is present.
     run keyword and continue on Failure             KW: Type email on the google workos email field.
 
     run keyword and continue on Failure             KW: Click the next button on the google workos page after entering the email id.
     run keyword and continue on Failure             KW: Type password on the google workos email field.
     run keyword and continue on Failure             KW: Click the next button on the google workos page after entering the password id.
 
-    run keyword and continue on Failure             KW: Wait for the element on the community page.
-    run keyword and continue on Failure             KW: Click on the community logout element.
-    run keyword and continue on Failure             KW: Verify community sso login element is present.
+    run keyword and continue on Failure             KW: Wait for the element on the webcommunity page.
+    run keyword and continue on Failure             KW: Click on the webcommunity logout element.
+    run keyword and continue on Failure             KW: Verify webcommunity sso login element is present.

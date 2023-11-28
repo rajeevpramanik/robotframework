@@ -17,8 +17,8 @@ Library         String
 
 
 ***Variables***
-${super admin dashboard url}    https://admin.v2qat.demopalipoint.com
-${admin dashboard url}    https://newdashboard.v2qat.demopalipoint.com
+${super admin cms url}    https://admin.v2qat.demopalipoint.com
+${admin cms url}    https://newcms.v2qat.demopalipoint.com
 
 #${Browser_Name}     headlesschrome
 ${Browser_Name}     chrome

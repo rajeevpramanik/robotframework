@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot generator="Robot 5.0.1 (Python 3.10.4 on darwin)" generated="20220629 01:38:26.566" rpa="false" schemaversion="3">
-<suite id="s1" name="Testing" source="/Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_dashboard_community/experiment/testing.robot">
+<suite id="s1" name="Testing" source="/Users/rajeev/Documents/palipoint_projects/palipoint_automation/package_cms_webcommunity/experiment/testing.robot">
 <test id="s1-t1" name="TC1:" line="6">
 <if>
 <branch type="IF" condition="${currentday} &lt;= 0">

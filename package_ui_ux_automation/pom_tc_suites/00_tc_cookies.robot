@@ -4,7 +4,7 @@ Documentation   This setting is for the cookie module verification and validatio
 Resource        ../setup_teardown/setup_teardown_func.robot
 
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 # Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
@@ -14,8 +14,8 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 Test Setup      KW: Maximize the Window.
 
 *** Test Cases ***
-TC1:[POSITIVE] [Login page: Cookie]- compare the event dashboard banner image with the stored image.
-    [Documentation]     This tc's in the login page will validate the cookie feature on the dashboard.
+TC1:[POSITIVE] [Login page: Cookie]- compare the event cms banner image with the stored image.
+    [Documentation]     This tc's in the login page will validate the cookie feature on the cms.
     [Tags]              negative
     Skip     Skipping the test case
 #    Pass Execution      Passing the test case   deprecated	-regression

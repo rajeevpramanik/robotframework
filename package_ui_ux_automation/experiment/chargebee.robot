@@ -14,11 +14,11 @@ Library         String
 Library         Dialogs
 
 *** Variables ***
-# ${super admin dashboard url}    https://admin.v2qat.demopalipoint.com
-# ${admin dashboard url}          https://newdashboard.v2qat.demopalipoint.com
+# ${super admin cms url}    https://admin.v2qat.demopalipoint.com
+# ${admin cms url}          https://newcms.v2qat.demopalipoint.com
 
-# ${super admin dashboard url}    https://admin.v2release.demopalipoint.com
-# ${admin dashboard url}    https://newdashboard.v2release.demopalipoint.com
+# ${super admin cms url}    https://admin.v2release.demopalipoint.com
+# ${admin cms url}    https://newcms.v2release.demopalipoint.com
 ${ssl proxy site url}       https://sslproxies.org
 
 ${v2qat}      v2qat
@@ -29,10 +29,10 @@ ${v2swat environment var}      v2swat
 ${Browser_Name}    chrome    #firefox
 
 #########################################################################################
-${Community_Browser}     chrome
+${webcommunity_Browser}     chrome
 
 #########################################################################################
-${Community_Browser2}     edge
+${webcommunity_Browser2}     edge
 
 ${chargebeeurl}                https://app.chargebee.com
 ${chargebee username}           rajeev@palipoint.com

@@ -3,7 +3,7 @@ Documentation   This setting is for deleting all the events for this organizer.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
-# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admindashboardurl}
+# Suite Setup     setup_teardown_func.KW: Launch Browser Common Keyword       ${firefox_browser}      ${admincmsurl}
 # Suite Teardown  setup_teardown_func.KW: Browser TearDown
 Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
