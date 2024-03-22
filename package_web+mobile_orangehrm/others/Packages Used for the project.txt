@@ -1,0 +1,44 @@
+CMD OR CLI: pip list / pip show package_name.
+
+Packages
+*********
+
+> Selenium
+> allure-pytest
+> flaky
+> openpyxl
+> pytest
+> pytest-bdd
+> pytest-html
+> pytest-ordering
+> pytest-sugar
+> requests
+
+=========================================
+> selenium
+> robotframework
+> robotframework-jenkins
+> robotframework-seleniumlibrary
+> robotframework-pabot (https://pabot.org)
+> robotframework-datadriver
+> robotframework-faker
+> robotframework-excellentlibrary
+> robotframework-SikuliLibrary
+> robotframework-debuglibrary
+> robotframework-screencaplibrary
+> robotframework-autorecorder
+> gherkin2robotframework
+
+Plugins
+> IntelliBot @SeleniumLibrary Patched
+> Run Robot Framework file
+> Robot Framework Support
+> Run Robot FrameworkTestCase
+> Batch Scripts support
+> CMD support
+
+Bitnami Jenkins Doc URL: https://docs.bitnami.com/virtual-machine/apps/jenkins/
+
+E:
+cd E:\Manual_Automation\PyCharmIDE\2021_Projects\Project_RPA_BlazeDemo_Site
+pabot --processes 2 --outputdir packagerobot\Test_HTML_Reports packagerobot\Test_Cases\*.robot

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20231024 13:20:38.533" rpa="false" schemaversion="4">
+<suite id="s1" name="Pom Test Suite" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_restful_booker_herokuapp/pom_test_suite">
+<suite id="s1-s1" name="Tc 1 Auth Create Token" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/package_restful_booker_herokuapp/pom_test_suite/tc_1_auth_create_token.robot">
+<test id="s1-s1-t1" name="TC-1 [POST] CREATE AUTH OR TOKEN FOR THE BOOK - SUCCESSFUL(Valid)" line="15">
+<kw name="Given KW: To open the workbook to the specified path." library="setup_teardown_func">
+<doc>This Keyword is opening the excelsheets to write &amp; read data's.</doc>
+<kw name="Open Workbook" library="ExcellentLibrary">
+<arg>${The work book}</arg>
+<doc>Opens the workbook found at the given file path.
+_NOTE_: Please note that at present _XLS_ files are not supported.</doc>
+<status status="PASS" starttime="20231024 13:20:38.928" endtime="20231024 13:20:38.933"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.928" endtime="20231024 13:20:38.933"/>
+</kw>
+<kw name="Given KW: Interacting with the Excel sheet2." library="setup_teardown_func">
+<doc>This Keyword is calling the other user defined keywords, created above for interaction with sheets 2.</doc>
+<kw name="KW: Switch sheets 2." library="setup_teardown_func">
+<doc>This Keyword will help to switch to the sheet named "Create_Token".</doc>
+<kw name="Switch Sheet" library="ExcellentLibrary">
+<arg>Create_Token</arg>
+<doc>Switches to the sheet with the supplied name within the active
+workbook.</doc>
+<status status="PASS" starttime="20231024 13:20:38.934" endtime="20231024 13:20:38.934"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.933" endtime="20231024 13:20:38.934"/>
+</kw>
+<kw name="KW: Get the Column Count." library="setup_teardown_func">
+<doc>This Keyword will count the total column used for the active sheet.</doc>
+<kw name="Get Column Count" library="ExcellentLibrary">
+<var>${The all column count is}</var>
+<doc>Returns the number of non-empty columns in the active sheet.</doc>
+<msg timestamp="20231024 13:20:38.934" level="INFO">${The all column count is} = 4</msg>
+<status status="PASS" starttime="20231024 13:20:38.934" endtime="20231024 13:20:38.934"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${The all column count is}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.935" level="INFO">${The all column count is} = 4</msg>
+<status status="PASS" starttime="20231024 13:20:38.934" endtime="20231024 13:20:38.935"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.934" endtime="20231024 13:20:38.935"/>
+</kw>
+<kw name="KW: Get the Row Count." library="setup_teardown_func">
+<doc>This Keyword will count the total row used for the active sheet.</doc>
+<kw name="Get Row Count" library="ExcellentLibrary">
+<var>${The all row count is}</var>
+<doc>Returns the number of non-empty rows in the active sheet.</doc>
+<msg timestamp="20231024 13:20:38.935" level="INFO">${The all row count is} = 9</msg>
+<status status="PASS" starttime="20231024 13:20:38.935" endtime="20231024 13:20:38.935"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${The all row count is}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.935" level="INFO">${The all row count is} = 9</msg>
+<status status="PASS" starttime="20231024 13:20:38.935" endtime="20231024 13:20:38.935"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.935" endtime="20231024 13:20:38.936"/>
+</kw>
+<kw name="KW: Globally evalutaing to the excel sheet." library="setup_teardown_func">
+<doc>This Keyword will evaluate the total row used plus one extra row (EX: 33 rows used + 1 row).</doc>
+<kw name="Evaluate" library="BuiltIn">
+<var>${Next_Row_Evalute}</var>
+<arg>${The all row count is}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231024 13:20:38.936" level="INFO">${Next_Row_Evalute} = 10</msg>
+<status status="PASS" starttime="20231024 13:20:38.936" endtime="20231024 13:20:38.936"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${Next_Row_Evalute}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.936" level="INFO">${Next_Row_Evalute} = 10</msg>
+<status status="PASS" starttime="20231024 13:20:38.936" endtime="20231024 13:20:38.936"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.936" endtime="20231024 13:20:38.936"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.933" endtime="20231024 13:20:38.936"/>
+</kw>
+<kw name="When KW: Creating Auth or Token POST Session." library="kw_1_auth_create_token">
+<arg>${API BASE URL}</arg>
+<arg>True</arg>
+<doc>Create a HTTP session to a server.
+With an alias, where Robot Framework alias is to identify the session.
+Including the Base url of the server
+Verify HTTPS request is being made in Robot Framework.</doc>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Restful_Brooker</arg>
+<arg>${arg api base url}</arg>
+<arg>verify=${arg verify}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20231024 13:20:38.937" level="INFO">Creating Session using : alias=Restful_Brooker, url=https://restful-booker.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20231024 13:20:38.937" endtime="20231024 13:20:38.937"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.937" endtime="20231024 13:20:38.937"/>
+</kw>
+<kw name="Then KW: Request Header." library="kw_1_auth_create_token">
+<doc>APIs require to send particular headers along with requests, typically to provide additional metadata about the operation that are performing.
+Can set these up in the Headers.
+Enter any key-value pairs needed and it will be send along with the request.</doc>
+<kw name="KW for User Agent" library="user_agents">
+<kw name="Get Length" library="BuiltIn">
+<var>${Length_Of_user_agents_Lists_Items}</var>
+<arg>${user_agents list}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231024 13:20:38.938" level="INFO">Length is 56</msg>
+<msg timestamp="20231024 13:20:38.938" level="INFO">${Length_Of_user_agents_Lists_Items} = 56</msg>
+<status status="PASS" starttime="20231024 13:20:38.938" endtime="20231024 13:20:38.938"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_NUMBER}</var>
+<arg>random.randint(0,${Length_Of_user_agents_Lists_Items}-1)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231024 13:20:38.938" level="INFO">${random_NUMBER} = 13</msg>
+<status status="PASS" starttime="20231024 13:20:38.938" endtime="20231024 13:20:38.938"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${useragent}</var>
+<arg>${user_agents list}</arg>
+<arg>${random_NUMBER}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20231024 13:20:38.938" level="INFO">${useragent} = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763</msg>
+<status status="PASS" starttime="20231024 13:20:38.938" endtime="20231024 13:20:38.938"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${useragent}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.939" level="INFO">${useragent} = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763</msg>
+<status status="PASS" starttime="20231024 13:20:38.938" endtime="20231024 13:20:38.939"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.938" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${Header}</var>
+<arg>User-Agent=${useragent}</arg>
+<arg>Content-Type=application/json</arg>
+<arg>accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231024 13:20:38.939" level="INFO">${Header} = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763', 'Content-Type': 'application/json', 'accept': 'appli...</msg>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${Header}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.939" level="INFO">${Header} = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763', 'Content-Type': 'application/json', 'accept': 'appli...</msg>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.937" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="And KW: POST Body with JSON Keys &amp; Value." library="kw_1_auth_create_token">
+<doc>Need to send body data using KEY-VALUE pairs with requests whenever need to add or update structured data.</doc>
+<kw name="Catenate" library="BuiltIn">
+<var>${Body}</var>
+<arg>{</arg>
+<arg>"username" : "admin",</arg>
+<arg>"password" : "password123"</arg>
+<arg>}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20231024 13:20:38.939" level="INFO">${Body} = { "username" : "admin", "password" : "password123" }</msg>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${Body}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:38.939" level="INFO">${Body} = { "username" : "admin", "password" : "password123" }</msg>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="Write To Cell" library="ExcellentLibrary">
+<arg>A${Next_Row_Evalute}</arg>
+<arg>admin</arg>
+<doc>Writes a value to the supplied cell.</doc>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<kw name="Write To Cell" library="ExcellentLibrary">
+<arg>B${Next_Row_Evalute}</arg>
+<arg>password123</arg>
+<doc>Writes a value to the supplied cell.</doc>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.939"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.939" endtime="20231024 13:20:38.940"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>KW: Response of the POST Request.</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="KW: Response of the POST Request." library="kw_1_auth_create_token">
+<doc>The response viewer helps to ensure the correctness of API responses.
+An API response consists of the body, headers, and the status code.
+It organizes body and headers in different forms.
+The status code and the completion time of the API call is visible.
+The response also contains the HTTP specification default description.
+However, API authors can also add custom message.</doc>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${Response}</var>
+<arg>Restful_Brooker</arg>
+<arg>${API AUTH END POINT}</arg>
+<arg>data=${Body}</arg>
+<arg>headers=${Header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20231024 13:20:40.149" level="INFO">POST Request : url=https://restful-booker.herokuapp.com/auth 
+ path_url=/auth 
+ headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '52'} 
+ body={ "username" : "admin", "password" : "password123" } 
+ </msg>
+<msg timestamp="20231024 13:20:40.149" level="INFO">POST Response : url=https://restful-booker.herokuapp.com/auth 
+ status=200, reason=OK 
+ headers={'Server': 'Cowboy', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698133839&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=iErdQce348985qsV57esjV%2Bh45c%2BK6ABLbxzxZrYRe8%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1698133839&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=iErdQce348985qsV57esjV%2Bh45c%2BK6ABLbxzxZrYRe8%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '27', 'Etag': 'W/"1b-FVe+3nJjggxDZiahC86EOeo2qZ0"', 'Date': 'Tue, 24 Oct 2023 07:50:39 GMT', 'Via': '1.1 vegur'} 
+ body={"token":"2933672b5912cae"} 
+ </msg>
+<msg timestamp="20231024 13:20:40.150" level="INFO">${Response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20231024 13:20:38.940" endtime="20231024 13:20:40.150"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${Response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:40.151" level="INFO">${Response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20231024 13:20:40.150" endtime="20231024 13:20:40.151"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.940" endtime="20231024 13:20:40.151"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:38.940" endtime="20231024 13:20:40.151"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Status_Code}</var>
+<arg>${Response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231024 13:20:40.152" level="INFO">${Status_Code} = 200</msg>
+<status status="PASS" starttime="20231024 13:20:40.151" endtime="20231024 13:20:40.152"/>
+</kw>
+<kw name="Write To Cell" library="ExcellentLibrary">
+<arg>D${Next_Row_Evalute}</arg>
+<arg>${Status_Code}</arg>
+<doc>Writes a value to the supplied cell.</doc>
+<status status="PASS" starttime="20231024 13:20:40.152" endtime="20231024 13:20:40.153"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${Status_Code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231024 13:20:40.153" endtime="20231024 13:20:40.153"/>
+</kw>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<arg>${Response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20231024 13:20:40.153" endtime="20231024 13:20:40.153"/>
+</kw>
+<kw name="Request Should Be Successful" library="RequestsLibrary">
+<arg>${Response}</arg>
+<doc>Fails if response status code is a client or server error (4xx, 5xx).</doc>
+<status status="PASS" starttime="20231024 13:20:40.153" endtime="20231024 13:20:40.153"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${JSON_Content}</var>
+<arg>${Response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231024 13:20:40.154" level="INFO">${JSON_Content} = {"token":"2933672b5912cae"}</msg>
+<status status="PASS" starttime="20231024 13:20:40.153" endtime="20231024 13:20:40.154"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${JSON_Content}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231024 13:20:40.154" level="INFO">${JSON_Content} = {"token":"2933672b5912cae"}</msg>
+<status status="PASS" starttime="20231024 13:20:40.154" endtime="20231024 13:20:40.154"/>
+</kw>
+<kw name="Convert String To Json" library="JSONLibrary">
+<var>${json}</var>
+<arg>${JSON_Content}</arg>
+<doc>Convert String to JSON object</doc>
+<msg timestamp="20231024 13:20:40.155" level="INFO">${json} = {'token': '2933672b5912cae'}</msg>
+<status status="PASS" starttime="20231024 13:20:40.154" endtime="20231024 13:20:40.155"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${Auth_Tokon_ID_Code}</var>
+<arg>${json}</arg>
+<arg>$.token</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20231024 13:20:40.174" level="INFO">${Auth_Tokon_ID_Code} = ['2933672b5912cae']</msg>
+<status status="PASS" starttime="20231024 13:20:40.155" endtime="20231024 13:20:40.174"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${Auth_Tokon_ID_Code_from_list}</var>
+<arg>${Auth_Tokon_ID_Code}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20231024 13:20:40.175" level="INFO">${Auth_Tokon_ID_Code_from_list} = 2933672b5912cae</msg>
+<status status="PASS" starttime="20231024 13:20:40.175" endtime="20231024 13:20:40.175"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Auth_Tokon_ID_Code_String}</var>
+<arg>${Auth_Tokon_ID_Code_from_list}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231024 13:20:40.175" level="INFO">${Auth_Tokon_ID_Code_String} = 2933672b5912cae</msg>
+<status status="PASS" starttime="20231024 13:20:40.175" endtime="20231024 13:20:40.175"/>
+</kw>
+<kw name="Write To Cell" library="ExcellentLibrary">
+<arg>C${Next_Row_Evalute}</arg>
+<arg>${Auth_Tokon_ID_Code_String}</arg>
+<doc>Writes a value to the supplied cell.</doc>
+<status status="PASS" starttime="20231024 13:20:40.175" endtime="20231024 13:20:40.175"/>
+</kw>
+<kw name="Then KW: To save &amp; close the workbook to the specified path." library="setup_teardown_func">
+<doc>This Keyword will help to save all the data's written to the sheet and will close it safely.</doc>
+<kw name="Save" library="ExcellentLibrary">
+<doc>Saves the changes to the currently active workbook.</doc>
+<status status="PASS" starttime="20231024 13:20:40.175" endtime="20231024 13:20:40.184"/>
+</kw>
+<kw name="Close Workbook" library="ExcellentLibrary">
+<doc>Closes the workbook identified by the supplied alias.</doc>
+<status status="PASS" starttime="20231024 13:20:40.184" endtime="20231024 13:20:40.184"/>
+</kw>
+<status status="PASS" starttime="20231024 13:20:40.175" endtime="20231024 13:20:40.184"/>
+</kw>
+<doc>This TC is to create AUTH or TOKEN with user credentials.</doc>
+<tag>Positive</tag>
+<status status="PASS" starttime="20231024 13:20:38.928" endtime="20231024 13:20:40.184"/>
+</test>
+<test id="s1-s1-t2" name="TC-2 [POST] CREATE AUTH OR TOKEN FOR THE BOOK - UNSUCCESSFUL(Invalid)" line="69">
+<doc>This TC is to check AUTH or TOKEN with user invalid credentials.</doc>
+<tag>Negative</tag>
+<status status="SKIP" starttime="20231024 13:20:40.184" endtime="20231024 13:20:40.184">Test skipped using '--skip' command line option.</status>
+</test>
+<doc>TC for Creating Auth or Token.</doc>
+<status status="PASS" starttime="20231024 13:20:38.540" endtime="20231024 13:20:40.184"/>
+</suite>
+<status status="PASS" starttime="20231024 13:20:38.533" endtime="20231024 13:20:40.185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="0" skip="1">Negative</stat>
+<stat pass="1" fail="0" skip="0">Positive</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="1" id="s1" name="Pom Test Suite">Pom Test Suite</stat>
+<stat pass="1" fail="0" skip="1" id="s1-s1" name="Tc 1 Auth Create Token">Pom Test Suite.Tc 1 Auth Create Token</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

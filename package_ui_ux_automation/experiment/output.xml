@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on darwin)" generated="20220629 01:38:26.566" rpa="false" schemaversion="3">
+<suite id="s1" name="Testing" source="/Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_cms_webcommunity/experiment/testing.robot">
+<test id="s1-t1" name="TC1:" line="6">
+<if>
+<branch type="IF" condition="${currentday} &lt;= 0">
+<msg timestamp="20220629 01:38:26.576" level="FAIL">IF branch cannot be empty.</msg>
+<status status="FAIL" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</branch>
+<branch type="ELSE IF" condition="${currentday} &gt;= 1 and ${currentday} &lt;= 15 and ${future_updated_days} &lt;= 15">
+<kw name="Set Variable" library="BuiltIn">
+<var>${GiftAmt}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</branch>
+<branch type="ELSE IF" condition="${currentday} &lt;= 15 and ${future_updated_days} &lt;= 31">
+<kw name="Set Variable" library="BuiltIn">
+<var>${GiftAmt}</var>
+<arg>100</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</branch>
+<branch type="ELSE IF" condition="${currentday} &gt;= 25 and ${future_updated_days} &lt;= 31">
+<kw name="Set Variable" library="BuiltIn">
+<var>${GiftAmt}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</branch>
+<branch type="ELSE IF" condition="${currentday} &gt;= 25 and ${future_updated_days} &lt;= 5">
+<kw name="Set Variable" library="BuiltIn">
+<var>${GiftAmt}</var>
+<arg>22</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</kw>
+<status status="NOT RUN" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.576"/>
+</branch>
+<status status="FAIL" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.577"/>
+</if>
+<status status="FAIL" starttime="20220629 01:38:26.576" endtime="20220629 01:38:26.577">IF branch cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20220629 01:38:26.567" endtime="20220629 01:38:26.577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testing">Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
