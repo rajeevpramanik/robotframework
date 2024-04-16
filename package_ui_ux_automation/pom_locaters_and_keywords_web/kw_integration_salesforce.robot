@@ -22,7 +22,7 @@ ${Integrate with Salesforce text}                   Integrate with Salesforce
 ${salesforce note text}                             Note, The registration data is synced at an interval of 5 minutes from gurupoint to Salesforce, Changes will be reflected on your Salesforce after that
 ${salesforce note2 text}                            gurupoint's Salesforce integration will enable you to manage your event leads and customer relationship data using robust functionality of Salesforce
 ${salesforce INTEGRATIONS : text}                   INTEGRATIONS :
-${salesforce INTEGRATIONS info}                     Export your registration(attendee) data to Salesforce objects, Export the profile fields of your choice to the Salesforce object of your choice like leads, contacts or any other custom Salesforce object, Import registration data from your Salesforce object to gurupoint events
+${salesforce INTEGRATIONS info}                     Export your registration(attendee) data to Salesforce objects, Export the profile fields of your choice to the Salesforce object of your choice like leads, contacts or any other custom Salesforce object, Import registration data from your Salesforce object to gurupoint place
 ${Connect with Salesforce text}                     Connect with Salesforce
 ${Connect with Salesforce info}                     Connect your Salesforce account to authenticate gurupoint to access your organisation's account
 ${salesforce side panel connect text}               Connect

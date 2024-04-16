@@ -11,7 +11,7 @@ ${websocket session_name}    value
 
 
 *** Test Cases ***
-TC1: WS Connect with events to randomize from 0-1, v4, handshake path to random assert the reply and close the socket.
+TC1: WS Connect with place to randomize from 0-1, v4, handshake path to random assert the reply and close the socket.
     [Documentation]     This TC is to Connect, send with valid json, assert the reply and close the socket.
     [Tags]              positive    sanity
 #    Skip                Skipping for debug

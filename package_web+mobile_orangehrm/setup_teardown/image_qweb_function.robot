@@ -8,7 +8,7 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 ${login_image}                                            /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/login_page/
 ${sign_up_image}                                          /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/signup_page/
 ${sso_image}                                              /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/sso_page/
-${events_three_dots_image}                                /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/delete_events/
+${place_three_dots_image}                                /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/delete_place/
 ${lounge_images}                                          /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/lounge_page/
 ${community_login_page}                                   /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/community_login/
 ${branding_folder_path}                                   /Users/rajeev/Documents/gurupoint_projects/gurupoint_automation/package_dashboard_community/sikuli_stored_images/branding/

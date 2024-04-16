@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   This setting is for creating tickets and purchasing.
+Documentation   This setting is for creating cardings and purchasing.
 
 Resource        ../setup_teardown/setup_teardown_func.robot
 
@@ -15,7 +15,7 @@ Suite Teardown  setup_teardown_func.KW: Close all browser TearDown
 
 *** Test Cases ***
 TC1: [POSITIVE] [integration]- Click the integration module on the top and validate the icon and info.
-    [Documentation]     This tc's is going perform delete operation for all the created events.
+    [Documentation]     This tc's is going perform delete operation for all the created place.
     [Tags]              positive
     # Skip     Skipping the test case
 #    Pass Execution      Passing the test case   deprecated	-regression
@@ -54,7 +54,7 @@ TC1: [POSITIVE] [integration]- Click the integration module on the top and valid
     # run keyword and continue on Failure  
 
 TC2: [POSITIVE] [integration]- Click the connect button and perform action on the side panel to validate the icon and info.
-    [Documentation]     This tc's is going perform delete operation for all the created events.
+    [Documentation]     This tc's is going perform delete operation for all the created place.
     [Tags]              positive
     # Skip     Skipping the test case
 #    Pass Execution      Passing the test case   deprecated	-regression
@@ -75,7 +75,7 @@ TC2: [POSITIVE] [integration]- Click the connect button and perform action on th
     run keyword and continue on Failure             KW: Verify the salesforce authenticate iframe is present upon clicking the connect.
 
 TC3: [POSITIVE] [integration]- Salesforce authentication and linking to cms.
-    [Documentation]     This tc's is going perform delete operation for all the created events.
+    [Documentation]     This tc's is going perform delete operation for all the created place.
     [Tags]              positive
     # Skip     Skipping the test case
 #    Pass Execution      Passing the test case   deprecated	-regression

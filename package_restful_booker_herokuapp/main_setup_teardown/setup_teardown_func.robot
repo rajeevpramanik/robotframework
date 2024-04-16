@@ -8,6 +8,7 @@ Library         JSONLibrary
 Library         BuiltIn
 Library         DateTime
 Library         BrowserMobProxyLibrary
+Library         SeLibExtensions
 Resource        ../main_setup_teardown/user_agents.robot
 
 *** Variables ***

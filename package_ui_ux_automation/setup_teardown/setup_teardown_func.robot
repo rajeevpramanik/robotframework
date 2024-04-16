@@ -29,15 +29,15 @@ Resource        ../pom_locaters_and_keywords_web/kw_onboarding.robot
 Resource        ../pom_locaters_and_keywords_web/kw_integration_sso.robot
 Resource        ../pom_locaters_and_keywords_web/kw_integration_salesforce.robot
 Resource        ../pom_locaters_and_keywords_web/kw_integration_sso_validating.robot
-Resource        ../pom_locaters_and_keywords_web/kw_events.robot
+Resource        ../pom_locaters_and_keywords_web/kw_place.robot
 Resource        ../pom_locaters_and_keywords_web/kw_people_bulk_upload.robot
 Resource        ../pom_locaters_and_keywords_web/kw_lounge_cms.robot
 Resource        ../pom_locaters_and_keywords_web/kw_lounge_webcommunity.robot
 Resource        ../pom_locaters_and_keywords_web/kw_room_cms.robot
 Resource        ../pom_locaters_and_keywords_web/kw_branding_cms.robot
 Resource        ../pom_locaters_and_keywords_web/kw_branding_webcommunity.robot
-Resource        ../pom_locaters_and_keywords_web/kw_delete_events.robot
-Resource        ../pom_locaters_and_keywords_web/kw_ticketing_cms_webcommunity.robot
+Resource        ../pom_locaters_and_keywords_web/kw_delete_place.robot
+Resource        ../pom_locaters_and_keywords_web/kw_cardinging_cms_webcommunity.robot
 Resource        ../pom_locaters_and_keywords_web/kw_cookies_policy.robot
 Resource        ../pom_locaters_and_keywords_web/kw_logout.robot
 Resource        ../pom_locaters_and_keywords_web/kw_chargebee_add_org.robot
@@ -52,7 +52,7 @@ ${environment}
 ${superadmincmsurl}       https://admin.${environment}.demogurupoint.com
 ${superadminPassword}
 ${admincmsurl}            https://newcms.${environment}.demogurupoint.com
-${admincmsPassword}       gurupointmasterpassword
+${admincmsPassword}       gurupoint123456
 
 ${chargebeeurl}                 https://app.chargebee.com
 ${chargebee username}           rajeev@gurupoint.com
@@ -68,6 +68,7 @@ ${chrome_browser}                   chrome
 ${headlesschrome_browser}           headlesschrome
 ${edge_browser}                     edge
 ${safari_browser}                   safari
+${browser_name_driver}
 
 
 *** Keywords ***  

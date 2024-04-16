@@ -14,7 +14,7 @@ Resource        ../setup_teardown/setup_teardown_func.robot
 
 
 *** Test Cases ***
-TC1: [POSITIVE] [Events page]- Interaction with event listing page.
+TC1: [POSITIVE] [place page]- Interaction with event listing page.
     [Documentation]     This tc's is going perform Login page "CREATE AN ACCOUNT" verification and validation with redirecting.
     [Tags]              positive
 #    Skip     Skipping the test case

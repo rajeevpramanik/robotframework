@@ -26,3 +26,4 @@ robotframework-confluentkafkalibrary
 robotframework-databaselibrary
 robot-mongodb-library
 robotframework-redislibrary
+robotframework-robocop

@@ -14,7 +14,7 @@ ${sso side frame enabled connect button xpath}                            xpath\
 ${sso side frame cancel button xpath}                                     xpath\=//span[contains(text(),'Cancel')]
 ${workos sso google xpath}                                                xpath\=//body/div[@id\='__next']/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/button[1]/*[1]
 ${connected sso xpath}                                                    xpath\=//span[normalize-space()\='CONNECTED']
-${gear box or setting xpath}                                              xpath\=//div[@id\='events-tabpanel-all']//div//div//div//div//div//div//div//div//div//button[@type\='button']//span//*[local-name()\='svg']
+${gear box or setting xpath}                                              xpath\=//div[@id\='place-tabpanel-all']//div//div//div//div//div//div//div//div//div//button[@type\='button']//span//*[local-name()\='svg']
 ${disconnect sso xpath}                                                   xpath\=//span[normalize-space()\='Disconnect']
 ${sso side panel connected status}                                        xpath\=/html/body/div[@role='presentation']/div[3]/aside/div//ul//a/span[.='CONNECTED']
 ${org name displaying on the side panel rel xpath}                        xpath\=/html[1]/body[1]/div[5]/div[3]/aside[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/p[1]

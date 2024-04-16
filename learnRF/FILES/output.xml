@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-05T09:42:54.440140" rpa="false" schemaversion="5">
+<suite id="s1" name="Mmt" source="/Users/rajeevpramanik/Documents/GitHub/robotframework/learnRF/FILES/mmt.robot">
+<test id="s1-t1" name="TC: Launch the browser and redirect to the website" line="60">
+<kw name="Run Keywords" owner="BuiltIn">
+<kw name="KW: Open browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-05T09:42:54.541042" level="INFO">Opening browser 'chrome' to base url 'https://www.goindigo.in'.</msg>
+<arg>${site url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-05T09:42:54.540945" elapsed="14.484745"/>
+</kw>
+<doc>Keyword to open the browser</doc>
+<status status="PASS" start="2024-04-05T09:42:54.540820" elapsed="14.485197"/>
+</kw>
+<arg>KW: Open browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-05T09:42:54.540694" elapsed="14.485390"/>
+</kw>
+<kw name="KW: Page load time">
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>value=30 sec</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2024-04-05T09:43:09.026891" elapsed="0.000925"/>
+</kw>
+<status status="PASS" start="2024-04-05T09:43:09.026420" elapsed="0.001482"/>
+</kw>
+<kw name="KW: Maximize window">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-05T09:43:09.028190" elapsed="0.459745"/>
+</kw>
+<status status="PASS" start="2024-04-05T09:43:09.028022" elapsed="0.459986"/>
+</kw>
+<kw name="KW: Sleep">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T09:43:14.490926" level="INFO">Slept 5 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T09:43:09.488320" elapsed="5.002695"/>
+</kw>
+<arg>5 sec</arg>
+<status status="PASS" start="2024-04-05T09:43:09.488141" elapsed="5.002966"/>
+</kw>
+<doc>Open the browser.
+Wait for the page load.
+Maximize the window.
+Wait for curtain duration.</doc>
+<tag>regression</tag>
+<status status="PASS" start="2024-04-05T09:42:54.540219" elapsed="19.951047"/>
+</test>
+<test id="s1-t2" name="TC: Search for one way journey" line="72">
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Element exist">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 sec</arg>
+<arg>limit=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-05T09:43:14.492061" elapsed="0.010423"/>
+</kw>
+<arg>${pop up image xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:14.491899" elapsed="0.010654"/>
+</kw>
+<arg>KW: Element exist</arg>
+<arg>${pop up image xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:14.491762" elapsed="0.010823"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-05T09:43:14.503076" level="INFO">Clicking element 'xpath=(//span[@id='salePopupCloseBtn'])[1]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T09:43:14.502971" elapsed="0.042081"/>
+</kw>
+<arg>${close pop up xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:14.502818" elapsed="0.042907"/>
+</kw>
+<arg>KW: Click</arg>
+<arg>${close pop up xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:14.502704" elapsed="0.043051"/>
+</kw>
+<kw name="KW: Sleep">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T09:43:19.548322" level="INFO">Slept 5 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T09:43:14.547719" elapsed="5.000800"/>
+</kw>
+<arg>5 sec</arg>
+<status status="PASS" start="2024-04-05T09:43:14.546448" elapsed="5.002266"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Element exist">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 sec</arg>
+<arg>limit=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-05T09:43:19.549785" elapsed="0.013175"/>
+</kw>
+<arg>${accept cookies xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:19.549344" elapsed="0.013727"/>
+</kw>
+<arg>KW: Element exist</arg>
+<arg>${accept cookies xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:19.549026" elapsed="0.014088"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-05T09:43:19.563832" level="INFO">Clicking element 'xpath=(//button[normalize-space()='Accept cookies'])[1]'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T09:43:19.563687" elapsed="0.040475"/>
+</kw>
+<arg>${accept cookies xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:19.563468" elapsed="0.040795"/>
+</kw>
+<arg>KW: Click</arg>
+<arg>${accept cookies xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:19.563287" elapsed="0.041009"/>
+</kw>
+<kw name="KW: Sleep">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T09:43:24.606697" level="INFO">Slept 5 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T09:43:19.604654" elapsed="5.002400"/>
+</kw>
+<arg>5 sec</arg>
+<status status="PASS" start="2024-04-05T09:43:19.604463" elapsed="5.002983"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-05T09:43:24.609476" level="INFO">Clicking element 'xpath=//input[@placeholder='From']'.</msg>
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.609108" elapsed="0.071477"/>
+</kw>
+<arg>${from field xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:24.608569" elapsed="0.072091"/>
+</kw>
+<arg>KW: Click</arg>
+<arg>${from field xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.608079" elapsed="0.072608"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Clear Element Text">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.681085" elapsed="0.018252"/>
+</kw>
+<arg>${from field xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:24.680931" elapsed="0.018480"/>
+</kw>
+<arg>KW: Clear Element Text</arg>
+<arg>${from field xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.680810" elapsed="0.018626"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Input Text">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-05T09:43:24.699962" level="INFO">Typing text 'Kolkata' into text field 'xpath=//input[@placeholder='From']'.</msg>
+<arg>locator=${xpath}</arg>
+<arg>text=${text}</arg>
+<arg>clear=${clearBoolean}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.699817" elapsed="0.092490"/>
+</kw>
+<arg>${from field xpath}</arg>
+<arg>Kolkata</arg>
+<arg>True</arg>
+<status status="PASS" start="2024-04-05T09:43:24.699665" elapsed="0.092719"/>
+</kw>
+<arg>KW: Input Text</arg>
+<arg>${from field xpath}</arg>
+<arg>Kolkata</arg>
+<arg>True</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.699556" elapsed="0.092942"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="KW: Element exist">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>timeout=10 sec</arg>
+<arg>limit=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.792888" elapsed="0.006248"/>
+</kw>
+<arg>${from auto suggestion drop down xpath}</arg>
+<status status="PASS" start="2024-04-05T09:43:24.792750" elapsed="0.006448"/>
+</kw>
+<arg>KW: Element exist</arg>
+<arg>${from auto suggestion drop down xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.792640" elapsed="0.006582"/>
+</kw>
+<kw name="KW: Sleep">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T09:43:29.799999" level="INFO">Slept 5 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T09:43:24.799479" elapsed="5.000813"/>
+</kw>
+<arg>5 sec</arg>
+<status status="PASS" start="2024-04-05T09:43:24.799340" elapsed="5.001198"/>
+</kw>
+<status status="PASS" start="2024-04-05T09:43:14.491504" elapsed="15.309484"/>
+</test>
+<test id="s1-t3" name="TC: Close all the browser" line="85">
+<kw name="KW: Close all browsers">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-05T09:43:29.802890" elapsed="0.083431"/>
+</kw>
+<status status="PASS" start="2024-04-05T09:43:29.802403" elapsed="0.084002"/>
+</kw>
+<status status="PASS" start="2024-04-05T09:43:29.801445" elapsed="0.085063"/>
+</test>
+<status status="PASS" start="2024-04-05T09:42:54.440653" elapsed="35.446088"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Mmt">Mmt</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
