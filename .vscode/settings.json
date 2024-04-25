@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "package_pylenium_demo_automationtesting_web"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

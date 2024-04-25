@@ -1,5 +1,6 @@
 robotframework
 QWeb
+robotframework-appiumlibrary
 robotframework-excellentlibrary
 robotframework-debuglibrary
 robotframework-faker
@@ -17,13 +18,12 @@ robotframework-screencaplibrary
 robotframework-eyes
 robotframework-imagelibrary
 robotframework-websocketclient
-robotframework-appiumlibrary
 robotframework-listenerlibrary
 robotframework-mqttlibrary
 robotframework-doesislibrary
 robotframework-archivelibrary
-robotframework-confluentkafkalibrary
 robotframework-databaselibrary
 robot-mongodb-library
-robotframework-redislibrary
 robotframework-robocop
+robotframework-redislibrary
+robotframework-confluentkafkalibrary
