@@ -8,7 +8,7 @@ Library         BuiltIn
 Library         Collections
 Library         OperatingSystem
 Library         AutoRecorder
-# Library         SikuliLibrary       mode=NEW
+Library         SikuliLibrary       mode=NEW
 Library         FakerLibrary        locale=en_US
 Library         ExcellentLibrary
 Library         DebugLibrary
